@@ -1,0 +1,151 @@
+{
+  "brand": {
+    "name": "Moria Rodrig - Law Office and Notary"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "A propos",
+    "services": "Services",
+    "book": "RDV",
+    "contact": "Contact",
+    "language": "Langue"
+  },
+  "footer": {
+    "rights": "© Moria Rodrig - Cabinet juridique et notariat. Tous droits reserves.",
+    "developer": "Developpé par Idan Hadad",
+    "privacy": "Politique de confidentialite"
+  },
+  "home": {
+    "heroEyebrow": "Cabinet d’avocate et notaire",
+    "heroTitle": "Cabinet d’avocate et notaire au centre d’Israël",
+    "heroIntro": "Bienvenue au cabinet de Me Moria Rodrig — avocate et notaire trilingue offrant des services juridiques et notariés en Israël.",
+    "heroBody": "Le cabinet est spécialisé en droit de la famille et des successions, immigration et statut, transactions immobilières, testaments et procurations, création et accompagnement de sociétés, ainsi qu’en services notariés complets.",
+    "heroCta": "Prendre rendez-vous",
+    "servicesTitle": "Nos services",
+    "lawyerTab": "Services juridiques",
+    "notaryTab": "Services notariés",
+    "advantagesTitle": "Atouts",
+    "contactSectionTitle": "Contact",
+    "contactFormConsent": "En soumettant le formulaire, vous acceptez le traitement de vos données personnelles.",
+    "contactOfficeHours": "Heures d’ouverture : 9h00 – 19h00, du dimanche au jeudi",
+    "contactOfficeHoursNote": "Des rendez-vous en dehors de ces horaires sont possibles sur demande.",
+    "contactAddress": "HaSivim 49, Petah Tikva",
+    "contactMapGoogle": "Ouvrir dans Google Maps",
+    "contactMapWaze": "Ouvrir dans Waze",
+    "lawyerServices": {
+      "prenup": {
+        "title": "Contrats prénuptiaux",
+        "text": "Organisation claire et protégée des biens entre conjoints."
+      },
+      "divorce": {
+        "title": "Divorce et pension alimentaire",
+        "text": "Dissolution du mariage, partage des biens, garde des enfants et pensions."
+      },
+      "property": {
+        "title": "Partage de biens",
+        "text": "Accords entre conjoints concernant la répartition des biens communs."
+      },
+      "inheritance": {
+        "title": "Successions",
+        "text": "Démarches successorales, accords de partage et renonciation à succession."
+      },
+      "paternity": {
+        "title": "Établissement de paternité",
+        "text": "Tests ADN et démarches pour la citoyenneté et la reconnaissance de paternité."
+      },
+      "epo": {
+        "title": "Procuration durable",
+        "text": "Directives en cas d’incapacité et désignation de mandataire."
+      },
+      "immigration": {
+        "title": "Droit de l’immigration",
+        "text": "Statut en Israël, permis de séjour et regroupement familial."
+      },
+      "realEstate": {
+        "title": "Transactions immobilières",
+        "text": "Accompagnement pour l’achat, la vente, la location et l’enregistrement."
+      },
+      "business": {
+        "title": "Accompagnement d’entreprises",
+        "text": "Création de sociétés, rédaction de contrats et suivi juridique continu."
+      }
+    },
+    "notaryServices": {
+      "wills": {
+        "title": "Testaments",
+        "text": "Testaments notariés dans plusieurs langues."
+      },
+      "poa": {
+        "title": "Procurations notariées",
+        "text": "Procurations pour Israël et l’étranger, avec ou sans apostille."
+      },
+      "translations": {
+        "title": "Traductions notariées",
+        "text": "Traductions certifiées pour usage en Israël et à l’étranger."
+      },
+      "childrenTravel": {
+        "title": "Autorisation de voyage pour enfants",
+        "text": "Autorisation de sortie de territoire avec un parent ou un accompagnant."
+      },
+      "alive": {
+        "title": "Certificats de vie",
+        "text": "Documents exigés pour les pensions et retraites de l’étranger."
+      },
+      "invitations": {
+        "title": "Invitations de visiteurs",
+        "text": "Lettres d’invitation pour proches et amis venant en Israël."
+      },
+      "copies": {
+        "title": "Copies certifiées conformes",
+        "text": "Copies certifiées de documents originaux pour tout usage."
+      }
+    },
+    "advantages": {
+      "reputation": "De nombreuses années d’expérience et de réputation solide",
+      "approach": "Approche personnalisée, réactivité et ponctualité",
+      "confidentiality": "Confidentialité totale et sérénité tout au long du dossier",
+      "languages": "Services juridiques et notariés dans plusieurs langues",
+      "partners": "Collaboration avec des cabinets partenaires en Israël et à l’étranger",
+      "location": "Emplacement central, proche des transports et parkings",
+      "visits": "Possibilité de déplacements au domicile, à l’hôpital ou en établissement",
+      "payments": "Plusieurs modes de paiement possibles",
+      "hours": "Horaires élargis possibles sur rendez-vous"
+    }
+  },
+  "about": {
+    "eyebrow": "À propos du cabinet",
+    "title": "Un service juridique professionnel avec une approche personnelle",
+    "p1": "Le cabinet offre des services juridiques et notariés avec un accent particulier sur la précision, l’accessibilité et la clarté des explications à chaque étape.",
+    "p2": "Chaque dossier est géré avec une planification rigoureuse, une documentation soignée et un accompagnement jusqu’à son aboutissement.",
+    "p3": "[À compléter : courte biographie, diplômes et années d’expérience.]",
+    "name": "Me Moria Rodrig",
+    "role": "Avocate et notaire"
+  },
+  "book": {
+    "eyebrow": "Reservation",
+    "title": "Reserver une consultation",
+    "subtitle": "Choisissez une date et un horaire puis envoyez vos details.",
+    "fields": {
+      "date": "Date",
+      "duration": "Duree",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Telephone",
+      "service": "Service",
+      "language": "Langue de reunion"
+    },
+    "minutes": "minutes",
+    "available": "Horaires disponibles",
+    "loading": "Chargement des horaires...",
+    "noSlots": "Aucun horaire disponible pour cette selection.",
+    "submit": "Confirmer la reservation",
+    "submitting": "Envoi...",
+    "successTitle": "Reservation confirmee",
+    "successBody": "Votre reunion est planifiee le {{date}} a {{time}}.",
+    "errors": {
+      "fetchSlots": "Impossible de charger les horaires.",
+      "selectSlot": "Selectionnez un horaire avant de continuer.",
+      "bookFailed": "Echec de reservation. Essayez un autre horaire."
+    }
+  }
+}

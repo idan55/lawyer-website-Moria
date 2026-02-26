@@ -1,0 +1,151 @@
+{
+  "brand": {
+    "name": "Moria Rodrig - Law Office and Notary"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Over ons",
+    "services": "Diensten",
+    "book": "Afspraak",
+    "contact": "Contact",
+    "language": "Taal"
+  },
+  "footer": {
+    "rights": "© Moria Rodrig - Advocatenkantoor en Notariaat. Alle rechten voorbehouden.",
+    "developer": "Gemaakt door Idan Hadad",
+    "privacy": "Privacybeleid"
+  },
+  "home": {
+    "heroEyebrow": "Advocatenkantoor en notariaat",
+    "heroTitle": "Advocatenkantoor en notariaat in het hart van Israël",
+    "heroIntro": "Welkom bij het kantoor van mr. Moria Rodrig — een meertalige advocate en notaris die juridische en notariële diensten in Israël aanbiedt.",
+    "heroBody": "Het kantoor richt zich op familie- en erfrecht, immigratie en verblijfsstatus, vastgoedtransacties, testamenten en volmachten, het oprichten en begeleiden van ondernemingen en een volledig pakket notariële diensten.",
+    "heroCta": "Afspraak maken",
+    "servicesTitle": "Onze diensten",
+    "lawyerTab": "Juridische diensten",
+    "notaryTab": "Notariële diensten",
+    "advantagesTitle": "Pluspunten",
+    "contactSectionTitle": "Contact",
+    "contactFormConsent": "Door het formulier te versturen gaat u akkoord met de verwerking van uw persoonsgegevens.",
+    "contactOfficeHours": "Openingstijden: 9:00 – 19:00, zondag t/m donderdag",
+    "contactOfficeHoursNote": "Afspraken buiten deze tijden zijn mogelijk in overleg.",
+    "contactAddress": "HaSivim 49, Petach Tikwa",
+    "contactMapGoogle": "Openen in Google Maps",
+    "contactMapWaze": "Openen in Waze",
+    "lawyerServices": {
+      "prenup": {
+        "title": "Huwelijkse voorwaarden",
+        "text": "Heldere en beschermde vermogensafspraken tussen partners."
+      },
+      "divorce": {
+        "title": "Echtscheiding en alimentatie",
+        "text": "Beëindiging van het huwelijk, vermogensverdeling, gezag en alimentatie."
+      },
+      "property": {
+        "title": "Vermogensverdeling",
+        "text": "Afspraken tussen partners over verdeling van gemeenschappelijke bezittingen."
+      },
+      "inheritance": {
+        "title": "Erfrecht",
+        "text": "Afwikkeling van nalatenschappen, verdeelafspraken en afstand van erfenis."
+      },
+      "paternity": {
+        "title": "Vaststelling vaderschap",
+        "text": "DNA‑onderzoek en procedures voor nationaliteit en erkenning."
+      },
+      "epo": {
+        "title": "Levenstestament / volmacht",
+        "text": "Instructies en bevoegdheden voor het geval van wilsonbekwaamheid."
+      },
+      "immigration": {
+        "title": "Immigratie- en verblijfsrecht",
+        "text": "Status in Israël, verblijfsvergunningen en gezinshereniging."
+      },
+      "realEstate": {
+        "title": "Vastgoedtransacties",
+        "text": "Begeleiding bij koop, verkoop, huur en inschrijving van transacties."
+      },
+      "business": {
+        "title": "Begeleiding van ondernemingen",
+        "text": "Oprichting van vennootschappen, contracten, notulen en doorlopend advies."
+      }
+    },
+    "notaryServices": {
+      "wills": {
+        "title": "Testamenten",
+        "text": "Notariële testamenten in meerdere talen."
+      },
+      "poa": {
+        "title": "Notariële volmachten",
+        "text": "Volmachten voor Israël en het buitenland, met of zonder apostille."
+      },
+      "translations": {
+        "title": "Notariële vertalingen",
+        "text": "Bevestigde vertalingen voor gebruik in Israël en daarbuiten."
+      },
+      "childrenTravel": {
+        "title": "Reistoestemming voor minderjarigen",
+        "text": "Toestemming voor reizen met één ouder of een begeleider."
+      },
+      "alive": {
+        "title": "Verklaringen van in leven zijn",
+        "text": "Benodigde documenten voor pensioenen en uitkeringen uit het buitenland."
+      },
+      "invitations": {
+        "title": "Uitnodigingen voor bezoekers",
+        "text": "Uitnodigingsbrieven voor familie en vrienden die Israël bezoeken."
+      },
+      "copies": {
+        "title": "Gecertificeerde kopieën",
+        "text": "Door de notaris gewaarmerkte kopieën van originele documenten."
+      }
+    },
+    "advantages": {
+      "reputation": "Jarenlange praktijkervaring en een sterke reputatie",
+      "approach": "Persoonlijke aanpak, snel schakelen en duidelijke afspraken",
+      "confidentiality": "Volledige vertrouwelijkheid en rust tijdens het hele traject",
+      "languages": "Juridische en notariële diensten in meerdere talen",
+      "partners": "Samenwerking met toonaangevende kantoren in Israël en daarbuiten",
+      "location": "Centrale ligging, goed bereikbaar met auto en openbaar vervoer",
+      "visits": "Mogelijkheid tot huis‑, kantoor‑ of ziekenhuisbezoek",
+      "payments": "Flexibele betaalmogelijkheden",
+      "hours": "Ruimere openingstijden mogelijk in overleg"
+    }
+  },
+  "about": {
+    "eyebrow": "Over het kantoor",
+    "title": "Professionele juridische dienstverlening met een persoonlijke benadering",
+    "p1": "Het kantoor biedt juridische en notariële diensten met nadruk op nauwkeurigheid, toegankelijkheid en heldere uitleg in elke fase.",
+    "p2": "Dossiers worden behandeld met zorgvuldige planning, precieze documentatie en begeleiding tot de afronding.",
+    "p3": "[Voeg hier een korte biografie, opleiding en jaren ervaring toe.]",
+    "name": "mr. Moria Rodrig",
+    "role": "Advocate en notaris"
+  },
+  "book": {
+    "eyebrow": "Boeken",
+    "title": "Boek een consult",
+    "subtitle": "Kies een datum en tijdslot en verstuur je gegevens.",
+    "fields": {
+      "date": "Datum",
+      "duration": "Duur",
+      "name": "Volledige naam",
+      "email": "E-mail",
+      "phone": "Telefoon",
+      "service": "Dienst",
+      "language": "Vergadertaal"
+    },
+    "minutes": "minuten",
+    "available": "Beschikbare tijden",
+    "loading": "Tijden laden...",
+    "noSlots": "Geen beschikbare tijden voor deze keuze.",
+    "submit": "Boeking bevestigen",
+    "submitting": "Verzenden...",
+    "successTitle": "Boeking bevestigd",
+    "successBody": "Je afspraak staat op {{date}} om {{time}}.",
+    "errors": {
+      "fetchSlots": "Beschikbare tijden konden niet geladen worden.",
+      "selectSlot": "Selecteer een tijdslot voordat je verzendt.",
+      "bookFailed": "Boeking mislukt. Probeer een ander tijdslot."
+    }
+  }
+}

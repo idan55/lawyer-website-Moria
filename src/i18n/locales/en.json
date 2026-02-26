@@ -1,0 +1,151 @@
+{
+  "brand": {
+    "name": "Moria Rodrig - Law Office and Notary"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "book": "Book",
+    "contact": "Contact",
+    "language": "Language"
+  },
+  "footer": {
+    "rights": "© Moria Rodrig - Law Office and Notary. All rights reserved.",
+    "developer": "Made by Idan Hadad",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "heroEyebrow": "Law Office and Notary",
+    "heroTitle": "Law office and notary in the center of Israel",
+    "heroIntro": "Welcome to the office of Adv. Moria Rodrig — a multilingual lawyer and notary providing legal and notarial services in Israel.",
+    "heroBody": "The office focuses on family, inheritance and immigration law, real estate transactions, wills and powers of attorney, business registration and support, as well as a full range of notarial services.",
+    "heroCta": "Schedule an appointment",
+    "servicesTitle": "Our services",
+    "lawyerTab": "Lawyer services",
+    "notaryTab": "Notary services",
+    "advantagesTitle": "Advantages",
+    "contactSectionTitle": "Contact",
+    "contactFormConsent": "By submitting the form, you consent to the processing of your personal data.",
+    "contactOfficeHours": "Office hours: 9:00 – 19:00, Sunday to Thursday",
+    "contactOfficeHoursNote": "Appointments outside these hours are possible by prior arrangement.",
+    "contactAddress": "Hasivim 49, Petah Tikva",
+    "contactMapGoogle": "Open in Google Maps",
+    "contactMapWaze": "Open in Waze",
+    "lawyerServices": {
+      "prenup": {
+        "title": "Prenuptial agreements",
+        "text": "Transparent and protected property relations between spouses."
+      },
+      "divorce": {
+        "title": "Divorce and alimony",
+        "text": "Marriage dissolution, division of property, custody and alimony."
+      },
+      "property": {
+        "title": "Property division",
+        "text": "Agreements between spouses on the division of shared property."
+      },
+      "inheritance": {
+        "title": "Inheritances",
+        "text": "Estate formalities, inheritance division agreements, renunciation."
+      },
+      "paternity": {
+        "title": "Paternity establishment",
+        "text": "DNA testing and procedures for citizenship and paternity."
+      },
+      "epo": {
+        "title": "Deferred power of attorney",
+        "text": "Directives in case of incapacity and guardianship."
+      },
+      "immigration": {
+        "title": "Immigration law",
+        "text": "Status in Israel, residence permits, family unification."
+      },
+      "realEstate": {
+        "title": "Real estate transactions",
+        "text": "Secure purchase, sale, lease and registration."
+      },
+      "business": {
+        "title": "Business support",
+        "text": "Company registration, contracts, protocols and ongoing advice."
+      }
+    },
+    "notaryServices": {
+      "wills": {
+        "title": "Wills",
+        "text": "Notarized instructions in case of death."
+      },
+      "poa": {
+        "title": "Powers of attorney",
+        "text": "Notarized powers for Israel and abroad."
+      },
+      "translations": {
+        "title": "Notarized translations",
+        "text": "For use in Israel and abroad."
+      },
+      "childrenTravel": {
+        "title": "Consent for children’s travel",
+        "text": "Travel with one parent or accompanying adult."
+      },
+      "alive": {
+        "title": "Certificates of being alive",
+        "text": "Documents for pension purposes."
+      },
+      "invitations": {
+        "title": "Guest invitations",
+        "text": "For relatives and friends visiting Israel."
+      },
+      "copies": {
+        "title": "Notarized copies",
+        "text": "Authenticated copies of original documents."
+      }
+    },
+    "advantages": {
+      "reputation": "Years of reputation and experience",
+      "approach": "Individual approach, promptness and punctuality",
+      "confidentiality": "Confidentiality and peace of mind during the process",
+      "languages": "Legal and notary services in several languages",
+      "partners": "Collaboration with leading offices in multiple countries",
+      "location": "Convenient central location close to transport and parking",
+      "visits": "Possibility of visits to clients at home or hospital",
+      "payments": "Flexible payment methods",
+      "hours": "Extended opening hours by prior arrangement"
+    }
+  },
+  "about": {
+    "eyebrow": "About the office",
+    "title": "Professional legal service with a personal approach",
+    "p1": "The office provides legal and notarial services with emphasis on precision, accessibility and clear communication at every step.",
+    "p2": "Matters are handled with practical planning, accurate documentation, and close follow-up until completion.",
+    "p3": "[TODO: Add your short personal bio, qualifications and years of experience here.]",
+    "name": "Adv. Moria Rodrig",
+    "role": "Lawyer and Notary"
+  },
+  "book": {
+    "eyebrow": "Booking",
+    "title": "Book a consultation",
+    "subtitle": "Select a date and slot, then submit your details.",
+    "fields": {
+      "date": "Date",
+      "duration": "Duration",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Service",
+      "language": "Meeting language"
+    },
+    "minutes": "minutes",
+    "available": "Available slots",
+    "loading": "Loading slots...",
+    "noSlots": "No available slots for this selection.",
+    "submit": "Confirm booking",
+    "submitting": "Submitting...",
+    "successTitle": "Booking confirmed",
+    "successBody": "Your meeting is scheduled for {{date}} at {{time}}.",
+    "errors": {
+      "fetchSlots": "Could not load available slots.",
+      "selectSlot": "Select an available slot before submitting.",
+      "bookFailed": "Booking failed. Please try another slot."
+    }
+  }
+}
