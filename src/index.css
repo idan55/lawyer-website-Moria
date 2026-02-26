@@ -1302,6 +1302,10 @@ a {
   margin-bottom: 1rem;
 }
 
+.about-long-bio {
+  white-space: pre-line;
+}
+
 .services-grid {
   gap: 1.4rem;
 }
@@ -1344,4 +1348,126 @@ a {
 
 .footer-credentials-wrapper {
   padding-top: 0.25rem;
+}
+
+/* Final spacing normalization */
+
+.page-padding {
+  padding-left: clamp(1rem, 2.5vw, 2rem);
+  padding-right: clamp(1rem, 2.5vw, 2rem);
+}
+
+.section_hero .padding-vertical-large,
+.section_about .padding-vertical-large,
+.section_services .padding-vertical-large,
+.section_features .padding-vertical-large,
+.section_contact .padding-vertical-large {
+  padding-top: clamp(2.8rem, 5vw, 4.5rem);
+  padding-bottom: clamp(2.8rem, 5vw, 4.5rem);
+}
+
+.hero-grid,
+.about-wrapper-flex,
+.contact-grid {
+  gap: clamp(1.25rem, 2.7vw, 2.25rem);
+}
+
+.uui-heroheader01_content > .uui-max-width-medium {
+  margin-top: 0.25rem;
+}
+
+.uui-heroheader01_content .button-main {
+  margin-top: 0.15rem;
+}
+
+.tabs {
+  gap: 1.1rem;
+}
+
+.tabs-content {
+  margin-top: 0.15rem;
+}
+
+.service-cell,
+.feature-cell,
+.contact-form-wrapper,
+.content-card,
+.success-panel {
+  border-radius: 16px;
+}
+
+.contact-form-wrapper {
+  padding: clamp(1.25rem, 2.2vw, 1.9rem);
+}
+
+.contact-form-grid {
+  gap: 0.95rem;
+}
+
+.contact-list {
+  gap: 0.9rem;
+}
+
+.contact-list .font-footnote {
+  margin-top: 0.15rem;
+}
+
+.contact-map-wrapper .mapbox-card {
+  margin-top: 0.15rem;
+}
+
+.map-links-row {
+  margin-top: 0.95rem;
+  gap: 0.65rem;
+}
+
+.footer .padding-vertical-medium {
+  padding-top: clamp(2rem, 3.6vw, 2.8rem);
+  padding-bottom: clamp(2rem, 3.6vw, 2.8rem);
+}
+
+.footer-grid {
+  gap: clamp(1.15rem, 2vw, 1.9rem);
+}
+
+.footer-menu-grid {
+  row-gap: 0.6rem;
+}
+
+.footer-credentials-wrapper {
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 900px) {
+  .navbar-wrapper {
+    gap: 1rem;
+  }
+
+  .navbar-menu {
+    margin-top: 0.1rem;
+  }
+
+  .section_hero .padding-vertical-large,
+  .section_about .padding-vertical-large,
+  .section_services .padding-vertical-large,
+  .section_features .padding-vertical-large,
+  .section_contact .padding-vertical-large {
+    padding-top: 2.3rem;
+    padding-bottom: 2.3rem;
+  }
+
+  .contact-button {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .space-large {
+    height: 1.75rem;
+  }
+
+  .footer-credentials-wrapper {
+    gap: 0.55rem;
+  }
 }

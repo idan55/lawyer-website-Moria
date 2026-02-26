@@ -9,59 +9,65 @@ const Contact = () => {
   const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
 
   return (
-    <section className="space-y-5">
-      <p className="eyebrow">Contact</p>
-      <h1 className="section-title">Contact and office details</h1>
-      <div className="grid gap-5 md:grid-cols-2">
-        <article className="content-card space-y-2">
-          <p className="card-copy">
-            Phone: <span className="phone-ltr">+972-54-622-5654</span>
-          </p>
-          <p className="card-copy">Email: moria@rodriglaw.com</p>
-          <p className="card-copy">Address: {addressText}</p>
-          <p className="card-copy">
-            Office hours: 9:00 - 16:00, Sunday to Thursday
-          </p>
-        </article>
-        {mapboxToken ? (
-          <div className="contact-map-wrapper">
-            <div className="mapbox-card mapbox-zoom-in">
-              <OfficeMap
-                lat={lat}
-                lng={lng}
-                label="Moria Rodrig - Law Office and Notary"
-              />
-            </div>
-            <div className="map-links-row">
-              <a
-                href={googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="map-link-button"
-              >
-                Open in Google Maps
-              </a>
-              <a
-                href={wazeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="map-link-button ghost"
-              >
-                Open in Waze
-              </a>
+    <section className="section_contact">
+      <div className="page-padding">
+        <div className="container-large">
+          <div className="padding-vertical-large space-y-5">
+            <p className="eyebrow">Contact</p>
+            <h1 className="section-title">Contact and office details</h1>
+            <div className="grid gap-5 md:grid-cols-2">
+              <article className="content-card space-y-2">
+                <p className="card-copy">
+                  Phone: <span className="phone-ltr">+972-54-622-5654</span>
+                </p>
+                <p className="card-copy">Email: moria@rodriglaw.com</p>
+                <p className="card-copy">Address: {addressText}</p>
+                <p className="card-copy">
+                  Office hours: 9:00 - 16:00, Sunday to Thursday
+                </p>
+              </article>
+              {mapboxToken ? (
+                <div className="contact-map-wrapper">
+                  <div className="mapbox-card mapbox-zoom-in">
+                    <OfficeMap
+                      lat={lat}
+                      lng={lng}
+                      label="Moria Rodrig - Law Office and Notary"
+                    />
+                  </div>
+                  <div className="map-links-row">
+                    <a
+                      href={googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="map-link-button"
+                    >
+                      Open in Google Maps
+                    </a>
+                    <a
+                      href={wazeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="map-link-button ghost"
+                    >
+                      Open in Waze
+                    </a>
+                  </div>
+                </div>
+              ) : (
+                <article className="mapbox-card mapbox-fallback">
+                  <p className="card-copy">
+                    Mapbox token missing. Add <code>VITE_MAPBOX_TOKEN</code> to your
+                    frontend environment file to display the live map.
+                  </p>
+                  <p className="card-copy">
+                    Coordinates: {lat}, {lng}
+                  </p>
+                </article>
+              )}
             </div>
           </div>
-        ) : (
-          <article className="mapbox-card mapbox-fallback">
-            <p className="card-copy">
-              Mapbox token missing. Add <code>VITE_MAPBOX_TOKEN</code> to your
-              frontend environment file to display the live map.
-            </p>
-            <p className="card-copy">
-              Coordinates: {lat}, {lng}
-            </p>
-          </article>
-        )}
+        </div>
       </div>
     </section>
   );
