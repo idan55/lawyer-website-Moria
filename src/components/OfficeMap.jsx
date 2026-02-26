@@ -24,7 +24,11 @@ function OfficeMap({ lat, lng, label }) {
 
     markerRef.current = new mapboxgl.Marker({ color: "#c1121f" })
       .setLngLat([lng, lat])
-      .setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML(`<strong>${label}</strong>`))
+      .setPopup(
+        new mapboxgl.Popup({ offset: 25, focusAfterOpen: false }).setHTML(
+          `<strong>${label}</strong>`
+        )
+      )
       .addTo(map.current);
 
     map.current.on("load", () => {
@@ -33,7 +37,6 @@ function OfficeMap({ lat, lng, label }) {
         zoom: 17.6,
         essential: true,
       });
-      markerRef.current?.togglePopup();
     });
 
     return () => {
