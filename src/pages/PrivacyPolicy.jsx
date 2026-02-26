@@ -1,145 +1,107 @@
+import { useTranslation } from "react-i18next";
+
 const PrivacyPolicy = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="space-y-5">
-      <p className="eyebrow">Legal</p>
-      <h1 className="section-title">Privacy Policy</h1>
-      <p className="section-copy">
-        This Privacy Policy governs personal data processing carried out through the
-        website of Moria Rodrig - Law Office and Notary and its integrated online
-        appointment booking system.
-      </p>
+    <section className="section_contact">
+      <div className="page-padding">
+        <div className="container-large">
+          <div className="padding-vertical-large space-y-5">
+            <p className="eyebrow">{t("privacy.eyebrow")}</p>
+            <h1 className="section-title">{t("privacy.title")}</h1>
+            <p className="section-copy">{t("privacy.intro")}</p>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">1. Scope of processing</h2>
-        <p className="card-copy">
-          This Policy applies only to data collected and processed via this website,
-          including booking requests, technical usage analytics, and related
-          communications.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.scope.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.scope.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">2. Personal data collected</h2>
-        <p className="card-copy">When a booking is submitted, the system processes:</p>
-        <ul className="privacy-list">
-          <li>Full name</li>
-          <li>Email address</li>
-          <li>Phone number (where provided)</li>
-          <li>Service request details</li>
-          <li>Preferred meeting language</li>
-          <li>Requested date, time slot and meeting duration</li>
-        </ul>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.data.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.data.body")}</p>
+              <ul className="privacy-list">
+                <li>{t("privacy.sections.data.items.name")}</li>
+                <li>{t("privacy.sections.data.items.email")}</li>
+                <li>{t("privacy.sections.data.items.phone")}</li>
+                <li>{t("privacy.sections.data.items.service")}</li>
+                <li>{t("privacy.sections.data.items.language")}</li>
+                <li>{t("privacy.sections.data.items.slot")}</li>
+              </ul>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">3. Purposes of use</h2>
-        <ul className="privacy-list">
-          <li>Assess and confirm appointment availability.</li>
-          <li>Create and administer confirmed appointments.</li>
-          <li>Contact users regarding booking requests.</li>
-          <li>Maintain lawful internal service records.</li>
-          <li>Monitor and improve website usability and performance.</li>
-        </ul>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.purpose.title")}</h2>
+              <ul className="privacy-list">
+                <li>{t("privacy.sections.purpose.items.availability")}</li>
+                <li>{t("privacy.sections.purpose.items.appointments")}</li>
+                <li>{t("privacy.sections.purpose.items.communication")}</li>
+                <li>{t("privacy.sections.purpose.items.records")}</li>
+                <li>{t("privacy.sections.purpose.items.analytics")}</li>
+              </ul>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">4. Systems and processors in active use</h2>
-        <ul className="privacy-list">
-          <li>
-            Google Calendar API: used to check calendar availability and create
-            confirmed appointment events.
-          </li>
-          <li>
-            PostgreSQL database: used to store appointment records submitted through
-            the booking flow.
-          </li>
-          <li>
-            Microsoft Clarity: used to collect website analytics and interaction
-            insights for service and interface improvement.
-          </li>
-        </ul>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.systems.title")}</h2>
+              <ul className="privacy-list">
+                <li>{t("privacy.sections.systems.items.calendar")}</li>
+                <li>{t("privacy.sections.systems.items.database")}</li>
+                <li>{t("privacy.sections.systems.items.clarity")}</li>
+              </ul>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">5. Cookies and analytics notice (Clarity)</h2>
-        <p className="card-copy">
-          This website uses Microsoft Clarity and similar analytics technologies,
-          including cookies and tracking scripts, to understand user behavior,
-          troubleshoot usability issues and improve website performance.
-        </p>
-        <p className="card-copy">
-          By continuing to use this website, you acknowledge such analytics
-          processing. Browser settings may be used to restrict cookies, noting that
-          certain functions may be affected.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.cookies.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.cookies.body1")}</p>
+              <p className="card-copy">{t("privacy.sections.cookies.body2")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">6. Legal basis</h2>
-        <p className="card-copy">
-          Data processing is carried out on applicable legal grounds, including steps
-          requested by the data subject prior to service engagement, legitimate
-          interests in secure website operation, and legal or professional compliance
-          duties.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.legalBasis.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.legalBasis.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">7. Disclosure and third-party transfer</h2>
-        <p className="card-copy">
-          Personal data is not sold. Data is disclosed only to the operational
-          providers listed above, or where disclosure is required by law, judicial
-          order or competent authority.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.disclosure.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.disclosure.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">8. Retention</h2>
-        <p className="card-copy">
-          Appointment-related records are retained for a period reasonably required
-          for service administration, legal obligations and professional record
-          management.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.retention.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.retention.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">9. Security</h2>
-        <p className="card-copy">
-          Reasonable technical and organizational safeguards are implemented to reduce
-          risks of unauthorized access, alteration, loss or misuse of data. Absolute
-          security in online systems cannot be guaranteed.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.security.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.security.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">10. Data subject rights</h2>
-        <p className="card-copy">
-          Subject to applicable law, users may request access, correction or deletion
-          of personal data processed through this website.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.rights.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.rights.body")}</p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">11. Contact for privacy matters</h2>
-        <p className="card-copy">
-          Moria Rodrig - Law Office and Notary
-          <br />
-          Phone: <span className="phone-ltr">+972-54-622-5654</span>
-          <br />
-          Email: moria@rodriglaw.com
-          <br />
-          Address: [TODO: Add official office address]
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.contact.title")}</h2>
+              <p className="card-copy">
+                {t("brand.name")}
+                <br />
+                {t("privacy.sections.contact.phoneLabel")}:{" "}
+                <span className="phone-ltr">+972-54-622-5654</span>
+                <br />
+                {t("privacy.sections.contact.emailLabel")}: moria@rodriglaw.com
+                <br />
+                {t("privacy.sections.contact.addressLabel")}: הסיבים 49 פתח תקווה
+              </p>
+            </article>
 
-      <article className="content-card privacy-card">
-        <h2 className="card-title">12. Policy revisions</h2>
-        <p className="card-copy">
-          This Policy may be updated from time to time to reflect legal,
-          technological or operational changes. The current published version on this
-          page is the governing version.
-        </p>
-      </article>
+            <article className="content-card privacy-card">
+              <h2 className="card-title">{t("privacy.sections.revisions.title")}</h2>
+              <p className="card-copy">{t("privacy.sections.revisions.body")}</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

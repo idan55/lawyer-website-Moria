@@ -1,6 +1,8 @@
 import OfficeMap from "../components/OfficeMap";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const addressText = "הסיבים 49 פתח תקווה";
   const lat = 32.0831515;
   const lng = 34.8567889;
@@ -13,17 +15,22 @@ const Contact = () => {
       <div className="page-padding">
         <div className="container-large">
           <div className="padding-vertical-large space-y-5">
-            <p className="eyebrow">Contact</p>
-            <h1 className="section-title">Contact and office details</h1>
+            <p className="eyebrow">{t("contact.eyebrow")}</p>
+            <h1 className="section-title">{t("contact.title")}</h1>
             <div className="grid gap-5 md:grid-cols-2">
               <article className="content-card space-y-2">
                 <p className="card-copy">
-                  Phone: <span className="phone-ltr">+972-54-622-5654</span>
+                  {t("contact.phoneLabel")}:{" "}
+                  <span className="phone-ltr">+972-54-622-5654</span>
                 </p>
-                <p className="card-copy">Email: moria@rodriglaw.com</p>
-                <p className="card-copy">Address: {addressText}</p>
                 <p className="card-copy">
-                  Office hours: 9:00 - 16:00, Sunday to Thursday
+                  {t("contact.emailLabel")}: moria@rodriglaw.com
+                </p>
+                <p className="card-copy">
+                  {t("contact.addressLabel")}: {addressText}
+                </p>
+                <p className="card-copy">
+                  {t("contact.officeHours")}
                 </p>
               </article>
               {mapboxToken ? (
@@ -32,7 +39,7 @@ const Contact = () => {
                     <OfficeMap
                       lat={lat}
                       lng={lng}
-                      label="Moria Rodrig - Law Office and Notary"
+                      label={t("brand.name")}
                     />
                   </div>
                   <div className="map-links-row">
@@ -42,7 +49,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="map-link-button"
                     >
-                      Open in Google Maps
+                      {t("contact.openGoogle")}
                     </a>
                     <a
                       href={wazeUrl}
@@ -50,18 +57,19 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="map-link-button ghost"
                     >
-                      Open in Waze
+                      {t("contact.openWaze")}
                     </a>
                   </div>
                 </div>
               ) : (
                 <article className="mapbox-card mapbox-fallback">
                   <p className="card-copy">
-                    Mapbox token missing. Add <code>VITE_MAPBOX_TOKEN</code> to your
-                    frontend environment file to display the live map.
+                    {t("contact.mapboxMissing")}{" "}
+                    <code>VITE_MAPBOX_TOKEN</code>{" "}
+                    {t("contact.mapboxMissingSuffix")}
                   </p>
                   <p className="card-copy">
-                    Coordinates: {lat}, {lng}
+                    {t("contact.coordinates")}: {lat}, {lng}
                   </p>
                 </article>
               )}

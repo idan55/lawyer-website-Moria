@@ -110,7 +110,23 @@
       "visits": "Possibilité de déplacements au domicile, à l’hôpital ou en établissement",
       "payments": "Plusieurs modes de paiement possibles",
       "hours": "Horaires élargis possibles sur rendez-vous"
-    }
+    },
+    "heroImageAlt": "Portrait de Me Moria Rodrig",
+    "aboutSection": {
+      "title": "À propos",
+      "p1": "Me Moria Rodrig fournit des services juridiques et notariés rigoureux, précis et accessibles, avec une communication claire et un suivi personnel pour chaque dossier.",
+      "p2": "Le cabinet accompagne des résidents d’Israël ainsi que des clients à l’étranger nécessitant un traitement rapide et exact de leurs documents et procédures.",
+      "p3": "Le cabinet travaille dans plusieurs langues afin que chaque client reçoive explications et documents dans la langue qui lui convient le mieux.",
+      "imageAlt": "Équipe du cabinet"
+    },
+    "contactForm": {
+      "namePlaceholder": "Votre nom",
+      "phonePlaceholder": "Numéro de téléphone",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Votre question ou le sujet juridique à traiter...",
+      "submit": "Envoyer"
+    },
+    "contactWhatsapp": "WhatsApp"
   },
   "about": {
     "eyebrow": "À propos du cabinet",
@@ -146,6 +162,126 @@
       "fetchSlots": "Impossible de charger les horaires.",
       "selectSlot": "Selectionnez un horaire avant de continuer.",
       "bookFailed": "Echec de reservation. Essayez un autre horaire."
+    },
+    "defaultService": "Consultation juridique générale",
+    "languages": {
+      "en": "Anglais",
+      "fr": "Français",
+      "he": "Hébreu",
+      "nl": "Néerlandais"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Domaines d’exercice juridiques et notariés",
+    "legalTitle": "Services juridiques",
+    "notaryTitle": "Services notariés",
+    "note": "Représentation complète, conseil stratégique et certifications notariales adaptées aux clients privés et professionnels.",
+    "legalItems": {
+      "consulting": "Conseil juridique civil et commercial",
+      "contracts": "Rédaction, révision et négociation de contrats",
+      "property": "Représentation en matière immobilière et transactionnelle",
+      "inheritance": "Accompagnement des procédures successorales"
+    },
+    "notaryItems": {
+      "signatures": "Vérification et certification de signatures",
+      "affidavits": "Déclarations notariales et procurations",
+      "copies": "Copies certifiées conformes de documents officiels",
+      "confirmations": "Attestations notariales pour usage local et international"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Coordonnées et informations du cabinet",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adresse",
+    "officeHours": "Heures d’ouverture : 9h00 - 16h00, du dimanche au jeudi",
+    "openGoogle": "Ouvrir dans Google Maps",
+    "openWaze": "Ouvrir dans Waze",
+    "mapboxMissing": "Jeton Mapbox manquant. Ajoutez",
+    "mapboxMissingSuffix": "au fichier d’environnement frontend pour afficher la carte en direct.",
+    "coordinates": "Coordonnées"
+  },
+  "connected": {
+    "title": "Google Calendar connecté avec succès",
+    "body": "La prise de rendez-vous est désormais active pour Moria Rodrig - Cabinet juridique et notariat.",
+    "cta": "Aller à la réservation"
+  },
+  "privacy": {
+    "eyebrow": "Juridique",
+    "title": "Politique de confidentialité",
+    "intro": "Cette politique de confidentialité encadre le traitement des données personnelles effectué via le site de Moria Rodrig - Cabinet juridique et notariat et son système intégré de prise de rendez-vous en ligne.",
+    "sections": {
+      "scope": {
+        "title": "1. Champ du traitement",
+        "body": "La présente politique s’applique uniquement aux données collectées et traitées via ce site, y compris les demandes de rendez-vous, les données techniques d’usage et les communications associées."
+      },
+      "data": {
+        "title": "2. Données personnelles collectées",
+        "body": "Lorsqu’une demande de rendez-vous est soumise, le système peut traiter :",
+        "items": {
+          "name": "Nom complet",
+          "email": "Adresse e-mail",
+          "phone": "Numéro de téléphone (le cas échéant)",
+          "service": "Détails du service demandé",
+          "language": "Langue de rendez-vous préférée",
+          "slot": "Date, créneau horaire et durée demandés"
+        }
+      },
+      "purpose": {
+        "title": "3. Finalités de traitement",
+        "items": {
+          "availability": "Évaluer et confirmer la disponibilité des rendez-vous.",
+          "appointments": "Créer et administrer les rendez-vous confirmés.",
+          "communication": "Contacter les utilisateurs au sujet de leurs demandes.",
+          "records": "Tenir des registres internes conformes aux obligations légales.",
+          "analytics": "Contrôler et améliorer l’ergonomie et les performances du site."
+        }
+      },
+      "systems": {
+        "title": "4. Systèmes et sous-traitants utilisés",
+        "items": {
+          "calendar": "API Google Calendar : utilisée pour vérifier la disponibilité et créer les événements de rendez-vous confirmés.",
+          "database": "Base de données PostgreSQL : utilisée pour stocker les enregistrements de rendez-vous soumis via le parcours de réservation.",
+          "clarity": "Microsoft Clarity : utilisé pour collecter des analyses d’usage et des interactions afin d’améliorer le service et l’interface."
+        }
+      },
+      "cookies": {
+        "title": "5. Information cookies et analytique (Clarity)",
+        "body1": "Ce site utilise Microsoft Clarity et des technologies analytiques similaires, y compris des cookies et scripts de suivi, afin de comprendre les comportements utilisateurs, détecter les difficultés d’usage et améliorer les performances du site.",
+        "body2": "En poursuivant votre navigation, vous reconnaissez ce traitement analytique. Les paramètres du navigateur peuvent limiter les cookies, sous réserve d’une possible altération de certaines fonctionnalités."
+      },
+      "legalBasis": {
+        "title": "6. Base juridique",
+        "body": "Le traitement est effectué sur des fondements juridiques applicables, incluant les mesures précontractuelles demandées par la personne concernée, l’intérêt légitime à l’exploitation sécurisée du site et le respect des obligations légales et professionnelles."
+      },
+      "disclosure": {
+        "title": "7. Divulgation et transfert à des tiers",
+        "body": "Les données personnelles ne sont pas vendues. Elles ne sont communiquées qu’aux prestataires opérationnels mentionnés ci-dessus, ou lorsque la loi, une décision judiciaire ou une autorité compétente l’exige."
+      },
+      "retention": {
+        "title": "8. Durée de conservation",
+        "body": "Les enregistrements liés aux rendez-vous sont conservés pendant la durée raisonnablement nécessaire à l’administration du service, au respect des obligations légales et à la gestion des dossiers professionnels."
+      },
+      "security": {
+        "title": "9. Sécurité",
+        "body": "Des mesures techniques et organisationnelles raisonnables sont appliquées afin de réduire les risques d’accès non autorisé, d’altération, de perte ou d’usage abusif des données. Une sécurité absolue des systèmes en ligne ne peut toutefois être garantie."
+      },
+      "rights": {
+        "title": "10. Droits des personnes concernées",
+        "body": "Sous réserve du droit applicable, les utilisateurs peuvent demander l’accès, la rectification ou l’effacement des données personnelles traitées via ce site."
+      },
+      "contact": {
+        "title": "11. Contact pour les questions de confidentialité",
+        "phoneLabel": "Téléphone",
+        "emailLabel": "E-mail",
+        "addressLabel": "Adresse"
+      },
+      "revisions": {
+        "title": "12. Révisions de la politique",
+        "body": "La présente politique peut être mise à jour périodiquement pour refléter des évolutions juridiques, technologiques ou opérationnelles. La version publiée sur cette page constitue la version en vigueur."
+      }
     }
   }
 }

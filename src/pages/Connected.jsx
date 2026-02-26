@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 const Connected = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="success-panel">
-      <h1>Google Calendar connected successfully</h1>
-      <p>Booking is now active for Moria Rodrig - Law Office and Notary.</p>
+      <h1>{t("connected.title")}</h1>
+      <p>{t("connected.body")}</p>
       <a className="cta-button mt-4 inline-flex" href="/book">
-        Go to booking
+        {t("connected.cta")}
       </a>
     </section>
   );

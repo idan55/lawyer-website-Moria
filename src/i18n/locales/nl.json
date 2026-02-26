@@ -110,7 +110,23 @@
       "visits": "Mogelijkheid tot huis‑, kantoor‑ of ziekenhuisbezoek",
       "payments": "Flexibele betaalmogelijkheden",
       "hours": "Ruimere openingstijden mogelijk in overleg"
-    }
+    },
+    "heroImageAlt": "Portret van mr. Moria Rodrig",
+    "aboutSection": {
+      "title": "Over",
+      "p1": "mr. Moria Rodrig verleent grondige, nauwkeurige en toegankelijke juridische en notariële dienstverlening, met duidelijke communicatie en persoonlijke aandacht in elke zaak.",
+      "p2": "Het kantoor begeleidt zowel inwoners van Israël als cliënten in het buitenland die snelle en correcte afhandeling van documentatie en vertegenwoordiging nodig hebben.",
+      "p3": "Het kantoor werkt in meerdere talen, zodat iedere cliënt uitleg en documenten ontvangt in de taal waarin hij of zij zich het meest comfortabel voelt.",
+      "imageAlt": "Team van het kantoor"
+    },
+    "contactForm": {
+      "namePlaceholder": "Uw naam",
+      "phonePlaceholder": "Telefoonnummer",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Uw vraag of het juridische onderwerp dat u wilt oplossen...",
+      "submit": "Verzenden"
+    },
+    "contactWhatsapp": "WhatsApp"
   },
   "about": {
     "eyebrow": "Over het kantoor",
@@ -146,6 +162,126 @@
       "fetchSlots": "Beschikbare tijden konden niet geladen worden.",
       "selectSlot": "Selecteer een tijdslot voordat je verzendt.",
       "bookFailed": "Boeking mislukt. Probeer een ander tijdslot."
+    },
+    "defaultService": "Algemeen juridisch consult",
+    "languages": {
+      "en": "Engels",
+      "fr": "Frans",
+      "he": "Hebreeuws",
+      "nl": "Nederlands"
+    }
+  },
+  "services": {
+    "eyebrow": "Diensten",
+    "title": "Juridische en notariële praktijkgebieden",
+    "legalTitle": "Juridische diensten",
+    "notaryTitle": "Notariële diensten",
+    "note": "Volledige vertegenwoordiging, strategisch advies en notariële certificering op maat voor particuliere en zakelijke cliënten.",
+    "legalItems": {
+      "consulting": "Civiel- en handelsrechtelijk juridisch advies",
+      "contracts": "Opstellen, beoordelen en onderhandelen van contracten",
+      "property": "Vertegenwoordiging in vastgoed- en transactiezaken",
+      "inheritance": "Begeleiding bij erfrechtelijke procedures"
+    },
+    "notaryItems": {
+      "signatures": "Verificatie en legalisatie van handtekeningen",
+      "affidavits": "Notariële verklaringen en volmachten",
+      "copies": "Gecertificeerde kopieën van officiële documenten",
+      "confirmations": "Notariële verklaringen voor lokaal en grensoverschrijdend gebruik"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact- en kantoorgegevens",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "addressLabel": "Adres",
+    "officeHours": "Kantooruren: 9:00 - 16:00, zondag t/m donderdag",
+    "openGoogle": "Openen in Google Maps",
+    "openWaze": "Openen in Waze",
+    "mapboxMissing": "Mapbox-token ontbreekt. Voeg",
+    "mapboxMissingSuffix": "toe aan je frontend-omgevingsbestand om de live kaart te tonen.",
+    "coordinates": "Coördinaten"
+  },
+  "connected": {
+    "title": "Google Calendar succesvol gekoppeld",
+    "body": "Boekingen zijn nu actief voor Moria Rodrig - Advocatenkantoor en Notariaat.",
+    "cta": "Ga naar boeken"
+  },
+  "privacy": {
+    "eyebrow": "Juridisch",
+    "title": "Privacybeleid",
+    "intro": "Dit privacybeleid regelt de verwerking van persoonsgegevens via de website van Moria Rodrig - Advocatenkantoor en Notariaat en het geïntegreerde online afsprakensysteem.",
+    "sections": {
+      "scope": {
+        "title": "1. Reikwijdte van de verwerking",
+        "body": "Dit beleid is uitsluitend van toepassing op gegevens die via deze website worden verzameld en verwerkt, waaronder boekingsverzoeken, technische gebruiksanalyses en bijbehorende communicatie."
+      },
+      "data": {
+        "title": "2. Verzamelde persoonsgegevens",
+        "body": "Wanneer een afspraakaanvraag wordt ingediend, kan het systeem het volgende verwerken:",
+        "items": {
+          "name": "Volledige naam",
+          "email": "E-mailadres",
+          "phone": "Telefoonnummer (indien verstrekt)",
+          "service": "Gegevens van het aangevraagde diensttype",
+          "language": "Voorkeurstaal voor de afspraak",
+          "slot": "Gewenste datum, tijdslot en duur van de afspraak"
+        }
+      },
+      "purpose": {
+        "title": "3. Doeleinden van gebruik",
+        "items": {
+          "availability": "Beschikbaarheid van afspraken beoordelen en bevestigen.",
+          "appointments": "Bevestigde afspraken aanmaken en beheren.",
+          "communication": "Gebruikers contacteren over boekingsverzoeken.",
+          "records": "Rechtmatige interne servicedossiers bijhouden.",
+          "analytics": "Gebruiksvriendelijkheid en prestaties van de website monitoren en verbeteren."
+        }
+      },
+      "systems": {
+        "title": "4. Systemen en verwerkers in gebruik",
+        "items": {
+          "calendar": "Google Calendar API: gebruikt om beschikbaarheid te controleren en bevestigde afspraakgebeurtenissen aan te maken.",
+          "database": "PostgreSQL-database: gebruikt om afspraakgegevens op te slaan die via de boekingsflow zijn ingediend.",
+          "clarity": "Microsoft Clarity: gebruikt om website-analyses en interactie-inzichten te verzamelen ter verbetering van dienst en interface."
+        }
+      },
+      "cookies": {
+        "title": "5. Cookie- en analysemelding (Clarity)",
+        "body1": "Deze website gebruikt Microsoft Clarity en vergelijkbare analysetechnologieën, waaronder cookies en tracking-scripts, om gebruikersgedrag te begrijpen, gebruiksproblemen op te sporen en websiteprestaties te verbeteren.",
+        "body2": "Door deze website te blijven gebruiken, erkent u deze analytische verwerking. Via browserinstellingen kunnen cookies worden beperkt, met dien verstande dat bepaalde functies daardoor kunnen worden beïnvloed."
+      },
+      "legalBasis": {
+        "title": "6. Rechtsgrond",
+        "body": "Gegevensverwerking vindt plaats op toepasselijke rechtsgronden, waaronder door de betrokkene gevraagde precontractuele stappen, gerechtvaardigde belangen bij veilige website-exploitatie en naleving van wettelijke en professionele verplichtingen."
+      },
+      "disclosure": {
+        "title": "7. Verstrekking en doorgifte aan derden",
+        "body": "Persoonsgegevens worden niet verkocht. Gegevens worden alleen verstrekt aan de hierboven genoemde operationele dienstverleners of wanneer dit wettelijk, bij rechterlijk bevel of door een bevoegde autoriteit is vereist."
+      },
+      "retention": {
+        "title": "8. Bewaartermijn",
+        "body": "Afsprakengerelateerde gegevens worden bewaard gedurende een redelijk noodzakelijke periode voor dienstadministratie, wettelijke verplichtingen en professioneel dossierbeheer."
+      },
+      "security": {
+        "title": "9. Beveiliging",
+        "body": "Redelijke technische en organisatorische maatregelen worden toegepast om risico’s op ongeautoriseerde toegang, wijziging, verlies of misbruik van gegevens te beperken. Volledige beveiliging van online systemen kan echter niet worden gegarandeerd."
+      },
+      "rights": {
+        "title": "10. Rechten van betrokkenen",
+        "body": "Onder voorbehoud van toepasselijk recht kunnen gebruikers verzoeken om inzage, correctie of verwijdering van persoonsgegevens die via deze website worden verwerkt."
+      },
+      "contact": {
+        "title": "11. Contact voor privacyzaken",
+        "phoneLabel": "Telefoon",
+        "emailLabel": "E-mail",
+        "addressLabel": "Adres"
+      },
+      "revisions": {
+        "title": "12. Wijzigingen van dit beleid",
+        "body": "Dit beleid kan van tijd tot tijd worden bijgewerkt om juridische, technologische of operationele wijzigingen te weerspiegelen. De op deze pagina gepubliceerde versie is de geldende versie."
+      }
     }
   }
 }

@@ -110,7 +110,23 @@
       "visits": "Possibility of visits to clients at home or hospital",
       "payments": "Flexible payment methods",
       "hours": "Extended opening hours by prior arrangement"
-    }
+    },
+    "heroImageAlt": "Portrait of Adv. Moria Rodrig",
+    "aboutSection": {
+      "title": "About",
+      "p1": "Adv. Moria Rodrig provides thorough, precise and accessible legal and notarial services, placing clear communication and personal attention at the center of each case.",
+      "p2": "Clients include residents of Israel as well as people abroad who require fast and accurate handling of documentation and representation.",
+      "p3": "The office works in several languages, allowing each client to receive explanations and documents in the language they are most comfortable with.",
+      "imageAlt": "Law office team"
+    },
+    "contactForm": {
+      "namePlaceholder": "Your name",
+      "phonePlaceholder": "Phone number",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Your question or the issue you want to resolve...",
+      "submit": "Submit"
+    },
+    "contactWhatsapp": "WhatsApp"
   },
   "about": {
     "eyebrow": "About the office",
@@ -146,6 +162,126 @@
       "fetchSlots": "Could not load available slots.",
       "selectSlot": "Select an available slot before submitting.",
       "bookFailed": "Booking failed. Please try another slot."
+    },
+    "defaultService": "General legal consultation",
+    "languages": {
+      "en": "English",
+      "fr": "French",
+      "he": "Hebrew",
+      "nl": "Dutch"
+    }
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Legal and notarial areas of practice",
+    "legalTitle": "Legal Services",
+    "notaryTitle": "Notary Services",
+    "note": "Comprehensive representation, strategic advice and notarial certification adapted to private and business clients.",
+    "legalItems": {
+      "consulting": "Civil and commercial legal consulting",
+      "contracts": "Contract drafting, review and negotiation",
+      "property": "Representation in property and transaction matters",
+      "inheritance": "Guidance for inheritance and estate proceedings"
+    },
+    "notaryItems": {
+      "signatures": "Verification and certification of signatures",
+      "affidavits": "Notarial affidavits and powers of attorney",
+      "copies": "Certified true copies of official documents",
+      "confirmations": "Notarial confirmations for local and cross-border use"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact and office details",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "officeHours": "Office hours: 9:00 - 16:00, Sunday to Thursday",
+    "openGoogle": "Open in Google Maps",
+    "openWaze": "Open in Waze",
+    "mapboxMissing": "Mapbox token missing. Add",
+    "mapboxMissingSuffix": "to your frontend environment file to display the live map.",
+    "coordinates": "Coordinates"
+  },
+  "connected": {
+    "title": "Google Calendar connected successfully",
+    "body": "Booking is now active for Moria Rodrig - Law Office and Notary.",
+    "cta": "Go to booking"
+  },
+  "privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy governs personal data processing carried out through the website of Moria Rodrig - Law Office and Notary and its integrated online appointment booking system.",
+    "sections": {
+      "scope": {
+        "title": "1. Scope of processing",
+        "body": "This Policy applies only to data collected and processed via this website, including booking requests, technical usage analytics, and related communications."
+      },
+      "data": {
+        "title": "2. Personal data collected",
+        "body": "When a booking is submitted, the system processes:",
+        "items": {
+          "name": "Full name",
+          "email": "Email address",
+          "phone": "Phone number (where provided)",
+          "service": "Service request details",
+          "language": "Preferred meeting language",
+          "slot": "Requested date, time slot and meeting duration"
+        }
+      },
+      "purpose": {
+        "title": "3. Purposes of use",
+        "items": {
+          "availability": "Assess and confirm appointment availability.",
+          "appointments": "Create and administer confirmed appointments.",
+          "communication": "Contact users regarding booking requests.",
+          "records": "Maintain lawful internal service records.",
+          "analytics": "Monitor and improve website usability and performance."
+        }
+      },
+      "systems": {
+        "title": "4. Systems and processors in active use",
+        "items": {
+          "calendar": "Google Calendar API: used to check calendar availability and create confirmed appointment events.",
+          "database": "PostgreSQL database: used to store appointment records submitted through the booking flow.",
+          "clarity": "Microsoft Clarity: used to collect website analytics and interaction insights for service and interface improvement."
+        }
+      },
+      "cookies": {
+        "title": "5. Cookies and analytics notice (Clarity)",
+        "body1": "This website uses Microsoft Clarity and similar analytics technologies, including cookies and tracking scripts, to understand user behavior, troubleshoot usability issues and improve website performance.",
+        "body2": "By continuing to use this website, you acknowledge such analytics processing. Browser settings may be used to restrict cookies, noting that certain functions may be affected."
+      },
+      "legalBasis": {
+        "title": "6. Legal basis",
+        "body": "Data processing is carried out on applicable legal grounds, including steps requested by the data subject prior to service engagement, legitimate interests in secure website operation, and legal or professional compliance duties."
+      },
+      "disclosure": {
+        "title": "7. Disclosure and third-party transfer",
+        "body": "Personal data is not sold. Data is disclosed only to the operational providers listed above, or where disclosure is required by law, judicial order or competent authority."
+      },
+      "retention": {
+        "title": "8. Retention",
+        "body": "Appointment-related records are retained for a period reasonably required for service administration, legal obligations and professional record management."
+      },
+      "security": {
+        "title": "9. Security",
+        "body": "Reasonable technical and organizational safeguards are implemented to reduce risks of unauthorized access, alteration, loss or misuse of data. Absolute security in online systems cannot be guaranteed."
+      },
+      "rights": {
+        "title": "10. Data subject rights",
+        "body": "Subject to applicable law, users may request access, correction or deletion of personal data processed through this website."
+      },
+      "contact": {
+        "title": "11. Contact for privacy matters",
+        "phoneLabel": "Phone",
+        "emailLabel": "Email",
+        "addressLabel": "Address"
+      },
+      "revisions": {
+        "title": "12. Policy revisions",
+        "body": "This Policy may be updated from time to time to reflect legal, technological or operational changes. The current published version on this page is the governing version."
+      }
     }
   }
 }

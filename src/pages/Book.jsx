@@ -24,7 +24,7 @@ const Book = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [service, setService] = useState("General legal consultation");
+  const [service, setService] = useState(t("book.defaultService"));
   const [language, setLanguage] = useState(
     ["en", "fr", "he", "nl"].includes(baseLang) ? baseLang : "en"
   );
@@ -218,10 +218,10 @@ const Book = () => {
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
               >
-                <option value="en">English</option>
-                <option value="fr">Francais</option>
-                <option value="he">Hebrew</option>
-                <option value="nl">Nederlands</option>
+                <option value="en">{t("book.languages.en")}</option>
+                <option value="fr">{t("book.languages.fr")}</option>
+                <option value="he">{t("book.languages.he")}</option>
+                <option value="nl">{t("book.languages.nl")}</option>
               </select>
             </label>
 

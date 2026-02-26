@@ -102,7 +102,7 @@ const Home = () => {
                 <div className="uui-heroheader01_image-wrapper">
                   <img
                     src="/moria-portrait.jpeg"
-                    alt="Portrait"
+                    alt={t("home.heroImageAlt")}
                     className="image-hero"
                   />
                 </div>
@@ -133,30 +133,17 @@ const Home = () => {
           <div className="container-large">
             <div className="padding-vertical-large">
               <div className="about-grid">
-                <h2 className="header-medium">About</h2>
+                <h2 className="header-medium">{t("home.aboutSection.title")}</h2>
                 <div className="about-wrapper-flex">
                   <div className="about-richtext">
-                    <p>
-                      Adv. Moria Rodrig provides thorough, precise and
-                      accessible legal and notarial services, placing clear
-                      communication and personal attention at the center of each
-                      case.
-                    </p>
-                    <p>
-                      Clients include residents of Israel as well as people
-                      abroad who require fast and accurate handling of
-                      documentation and representation.
-                    </p>
-                    <p>
-                      The office works in several languages, allowing each
-                      client to receive explanations and documents in the
-                      language they are most comfortable with.
-                    </p>
+                    <p>{t("home.aboutSection.p1")}</p>
+                    <p>{t("home.aboutSection.p2")}</p>
+                    <p>{t("home.aboutSection.p3")}</p>
                   </div>
                   <div className="about-image-wrapper">
                     <img
                       src="/WhatsApp Image 2026-02-26 at 11.13.24.jpeg"
-                      alt="Law office team"
+                      alt={t("home.aboutSection.imageAlt")}
                       className="image-large"
                     />
                   </div>
@@ -261,7 +248,7 @@ const Home = () => {
                       <input
                         className="contact-form_input"
                         name="name"
-                        placeholder="Your name"
+                        placeholder={t("home.contactForm.namePlaceholder")}
                         type="text"
                       />
                     </div>
@@ -269,7 +256,7 @@ const Home = () => {
                       <input
                         className="contact-form_input"
                         name="phone"
-                        placeholder="Phone number"
+                        placeholder={t("home.contactForm.phonePlaceholder")}
                         type="tel"
                       />
                     </div>
@@ -277,7 +264,7 @@ const Home = () => {
                       <input
                         className="contact-form_input"
                         name="email"
-                        placeholder="E-mail"
+                        placeholder={t("home.contactForm.emailPlaceholder")}
                         type="email"
                       />
                     </div>
@@ -285,13 +272,13 @@ const Home = () => {
                       <textarea
                         name="message"
                         maxLength={5000}
-                        placeholder="Your question or the issue you want to resolve..."
+                        placeholder={t("home.contactForm.messagePlaceholder")}
                         className="contact-form_input text-area"
                       />
                     </div>
                     <div className="contact-button-wrapper">
                       <button type="submit" className="button-main">
-                        Submit
+                        {t("home.contactForm.submit")}
                       </button>
                       <label className="uui-form-checkbox">
                         <input type="checkbox" required />
@@ -304,7 +291,7 @@ const Home = () => {
                 </div>
 
                 <div className="contact-list">
-                  <h2 className="header-small">Contact</h2>
+                  <h2 className="header-small">{t("home.contactSectionTitle")}</h2>
                   <div className="space-small" />
                   <div>
                     <a
@@ -330,7 +317,7 @@ const Home = () => {
                       className="icon-link-block-large"
                     >
                       <span className="icon-whatsapp" />
-                      <span>WhatsApp</span>
+                      <span>{t("home.contactWhatsapp")}</span>
                     </a>
                     <div className="space-xsmall" />
                     <a
@@ -359,7 +346,7 @@ const Home = () => {
                   <OfficeMap
                     lat={lat}
                     lng={lng}
-                    label="Moria Rodrig - Law Office and Notary"
+                    label={t("brand.name")}
                   />
                 </div>
                 <div className="map-links-row">
