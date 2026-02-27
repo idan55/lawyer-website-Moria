@@ -162,7 +162,8 @@
       "fetchSlots": "Impossible de charger les horaires.",
       "selectSlot": "Selectionnez un horaire avant de continuer.",
       "bookFailed": "Echec de reservation. Essayez un autre horaire.",
-      "connectCalendar": "Google Calendar n’est pas connecté. Veuillez le connecter pour charger les disponibilités."
+      "connectCalendar": "Google Calendar n’est pas connecté. Veuillez le connecter pour charger les disponibilités.",
+      "invalidPhone": "Veuillez saisir un numéro de téléphone valide avec indicatif pays (exemple : +972546225654)."
     },
     "defaultService": "Consultation juridique générale",
     "languages": {

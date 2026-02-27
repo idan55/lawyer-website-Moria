@@ -94,6 +94,15 @@ const Book = () => {
     return `${year}-${month}-${day}`;
   }
 
+  function isValidPhone(value) {
+    const normalized = String(value || "").replace(/[\s\-().]/g, "");
+    if (!/^\+?\d+$/.test(normalized)) return false;
+    const digitsOnly = normalized.startsWith("+")
+      ? normalized.slice(1)
+      : normalized;
+    return digitsOnly.length >= 7 && digitsOnly.length <= 15;
+  }
+
   async function submitBooking(event) {
     event.preventDefault();
     setBookingError("");
@@ -101,6 +110,11 @@ const Book = () => {
 
     if (!selectedSlot?.time) {
       setBookingError(t("book.errors.selectSlot"));
+      return;
+    }
+
+    if (!isValidPhone(phone)) {
+      setBookingError(t("book.errors.invalidPhone"));
       return;
     }
 
@@ -253,6 +267,7 @@ const Book = () => {
                     <span>{t("book.fields.phone")}</span>
                     <input
                       type="text"
+                      required
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />

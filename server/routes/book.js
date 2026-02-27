@@ -24,6 +24,19 @@ function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
+function isValidPhone(phone) {
+  // Accept international numbers with optional leading + and common separators.
+  const normalized = String(phone || "").replace(/[\s\-().]/g, "");
+  if (!/^\+?\d+$/.test(normalized)) return false;
+
+  const digitsOnly = normalized.startsWith("+")
+    ? normalized.slice(1)
+    : normalized;
+
+  // E.164 max is 15; use 7 as practical minimum for local/international formats.
+  return digitsOnly.length >= 7 && digitsOnly.length <= 15;
+}
+
 function createValidationError(error) {
   return { ok: false, error };
 }
@@ -40,6 +53,10 @@ function parseBookingPayload(body) {
 
   if (!name) return createValidationError("Name is required");
   if (!isValidEmail(email)) return createValidationError("Valid email is required");
+  if (!phone) return createValidationError("Phone is required");
+  if (!isValidPhone(phone)) {
+    return createValidationError("Enter a valid international phone number");
+  }
   if (!service) return createValidationError("Service is required");
   if (!SUPPORTED_LANGUAGES.has(language)) {
     return createValidationError("Language must be one of: en, fr, he, nl");

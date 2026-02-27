@@ -162,7 +162,8 @@
       "fetchSlots": "Beschikbare tijden konden niet geladen worden.",
       "selectSlot": "Selecteer een tijdslot voordat je verzendt.",
       "bookFailed": "Boeking mislukt. Probeer een ander tijdslot.",
-      "connectCalendar": "Google Calendar is niet gekoppeld. Koppel het om beschikbaarheid te laden."
+      "connectCalendar": "Google Calendar is niet gekoppeld. Koppel het om beschikbaarheid te laden.",
+      "invalidPhone": "Voer een geldig telefoonnummer met landcode in (bijvoorbeeld: +972546225654)."
     },
     "defaultService": "Algemeen juridisch consult",
     "languages": {

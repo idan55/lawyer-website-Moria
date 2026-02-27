@@ -162,7 +162,8 @@
       "fetchSlots": "לא ניתן לטעון שעות זמינות.",
       "selectSlot": "יש לבחור שעה פנויה לפני שליחה.",
       "bookFailed": "ההזמנה נכשלה. נסו שעה אחרת.",
-      "connectCalendar": "Google Calendar אינו מחובר. יש לחבר אותו כדי לטעון זמינות."
+      "connectCalendar": "Google Calendar אינו מחובר. יש לחבר אותו כדי לטעון זמינות.",
+      "invalidPhone": "יש להזין מספר טלפון תקין עם קידומת מדינה (לדוגמה: +972546225654)."
     },
     "defaultService": "ייעוץ משפטי כללי",
     "languages": {

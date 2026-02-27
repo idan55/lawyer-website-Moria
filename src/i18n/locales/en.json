@@ -162,7 +162,8 @@
       "fetchSlots": "Could not load available slots.",
       "selectSlot": "Select an available slot before submitting.",
       "bookFailed": "Booking failed. Please try another slot.",
-      "connectCalendar": "Google Calendar is not connected. Please connect it to load availability."
+      "connectCalendar": "Google Calendar is not connected. Please connect it to load availability.",
+      "invalidPhone": "Enter a valid phone number with country code (for example: +972546225654)."
     },
     "defaultService": "General legal consultation",
     "languages": {
