@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Book = () => {
   const { i18n, t } = useTranslation();
@@ -15,6 +17,7 @@ const Book = () => {
   }, []);
 
   const [date, setDate] = useState(todayIso);
+  const [selectedDate, setSelectedDate] = useState(new Date());
   const [duration, setDuration] = useState(30);
   const [slots, setSlots] = useState([]);
   const [selectedSlot, setSelectedSlot] = useState(null);
@@ -64,6 +67,13 @@ const Book = () => {
     fetchSlots();
     return () => abortController.abort();
   }, [apiBase, date, duration, reloadTick, t]);
+
+  function formatIsoLocal(dateValue) {
+    const year = dateValue.getFullYear();
+    const month = String(dateValue.getMonth() + 1).padStart(2, "0");
+    const day = String(dateValue.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }
 
   async function submitBooking(event) {
     event.preventDefault();
@@ -128,11 +138,19 @@ const Book = () => {
                 <div className="grid gap-4 md:grid-cols-2">
                   <label className="field">
                     <span>{t("book.fields.date")}</span>
-                    <input
-                      type="date"
-                      min={todayIso}
-                      value={date}
-                      onChange={(e) => setDate(e.target.value)}
+                    <DatePicker
+                      selected={selectedDate}
+                      onChange={(pickedDate) => {
+                        if (!pickedDate) return;
+                        setSelectedDate(pickedDate);
+                        setDate(formatIsoLocal(pickedDate));
+                      }}
+                      minDate={new Date()}
+                      dateFormat="yyyy-MM-dd"
+                      className="booking-datepicker-input"
+                      calendarClassName="booking-datepicker-calendar"
+                      popperClassName="booking-datepicker-popper"
+                      showPopperArrow={false}
                     />
                   </label>
 
