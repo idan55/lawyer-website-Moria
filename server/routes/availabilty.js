@@ -8,6 +8,7 @@ import {
   buildDateTime,
   parseDuration,
   buildCandidateSlots,
+  isWorkingDay,
   toSlots,
 } from "../utils/scheduling.js";
 
@@ -26,6 +27,13 @@ router.get("/", async (req, res) => {
       return res.status(400).json({ error: "Invalid duration. Use 30 or 60" });
     }
 
+    const dateAtOfficeStart = buildDateTime(date, OFFICE_START_HOUR);
+    if (!isWorkingDay(dateAtOfficeStart)) {
+      return res.status(400).json({
+        error: "Appointments are available Sunday to Thursday only",
+      });
+    }
+
     const accessToken = await getValidAccessToken();
 
     const oauth2Client = getOAuthClient();
@@ -33,7 +41,7 @@ router.get("/", async (req, res) => {
 
     const calendar = google.calendar({ version: "v3", auth: oauth2Client });
 
-    const startOfDay = buildDateTime(date, OFFICE_START_HOUR);
+    const startOfDay = dateAtOfficeStart;
     const endOfDay = buildDateTime(date, OFFICE_END_HOUR);
 
     const response = await calendar.freebusy.query({

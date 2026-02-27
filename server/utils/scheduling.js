@@ -1,6 +1,7 @@
 export const SLOT_INTERVAL_MINUTES = 30;
 export const OFFICE_START_HOUR = 9;
 export const OFFICE_END_HOUR = 16;
+export const WORKING_DAYS = new Set([0, 1, 2, 3, 4]); // Sun-Thu
 
 export function parseDuration(value) {
   if (value === undefined) return null;
@@ -15,6 +16,10 @@ export function buildDateTime(dateString, hour, minute = 0) {
   const date = new Date(`${dateString}T00:00:00`);
   date.setHours(hour, minute, 0, 0);
   return date;
+}
+
+export function isWorkingDay(date) {
+  return WORKING_DAYS.has(date.getDay());
 }
 
 export function addMinutes(date, minutes) {

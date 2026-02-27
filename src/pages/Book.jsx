@@ -8,16 +8,26 @@ const Book = () => {
   const baseLang = i18n.language.split("-")[0];
   const apiBase = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
-  const todayIso = useMemo(() => {
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = String(now.getMonth() + 1).padStart(2, "0");
-    const day = String(now.getDate()).padStart(2, "0");
-    return `${year}-${month}-${day}`;
-  }, []);
+  const today = useMemo(() => new Date(), []);
 
-  const [date, setDate] = useState(todayIso);
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const initialWorkingDate = useMemo(() => {
+    const next = new Date(today);
+    next.setHours(0, 0, 0, 0);
+    while ([5, 6].includes(next.getDay())) {
+      next.setDate(next.getDate() + 1);
+    }
+    return next;
+  }, [today]);
+
+  const initialWorkingIso = useMemo(() => {
+    const year = initialWorkingDate.getFullYear();
+    const month = String(initialWorkingDate.getMonth() + 1).padStart(2, "0");
+    const day = String(initialWorkingDate.getDate()).padStart(2, "0");
+    return `${year}-${month}-${day}`;
+  }, [initialWorkingDate]);
+
+  const [date, setDate] = useState(initialWorkingIso);
+  const [selectedDate, setSelectedDate] = useState(initialWorkingDate);
   const [duration, setDuration] = useState(30);
   const [slots, setSlots] = useState([]);
   const [selectedSlot, setSelectedSlot] = useState(null);
@@ -162,6 +172,7 @@ const Book = () => {
                         setDate(formatIsoLocal(pickedDate));
                       }}
                       minDate={new Date()}
+                      filterDate={(day) => ![5, 6].includes(day.getDay())}
                       dateFormat="yyyy-MM-dd"
                       className="booking-datepicker-input"
                       calendarClassName="booking-datepicker-calendar"

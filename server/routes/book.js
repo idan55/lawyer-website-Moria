@@ -8,6 +8,7 @@ import {
   OFFICE_START_HOUR,
   addMinutes,
   buildDateTime,
+  isWorkingDay,
   isWithinOfficeHours,
   parseDuration,
 } from "../utils/scheduling.js";
@@ -54,6 +55,10 @@ function parseBookingPayload(body) {
   const [hour, minute] = start.split(":").map(Number);
   const startTime = buildDateTime(date, hour, minute);
   const endTime = addMinutes(startTime, duration);
+
+  if (!isWorkingDay(startTime)) {
+    return createValidationError("Appointments are available Sunday to Thursday only");
+  }
 
   if (!isWithinOfficeHours(startTime, duration)) {
     return createValidationError(
