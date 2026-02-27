@@ -189,9 +189,22 @@ router.post("/", async (req, res) => {
   } catch (err) {
     console.error("Booking error:");
     console.error(err?.response?.data || err);
+
+    const details = err?.response?.data || String(err);
+    const message = String(err?.message || "").toLowerCase();
+    const providerError = String(err?.response?.data?.error || "").toLowerCase();
+
+    if (message.includes("no google tokens stored") || providerError === "invalid_grant") {
+      return res.status(401).json({
+        error: "Google Calendar is not connected",
+        code: "GOOGLE_NOT_CONNECTED",
+        details,
+      });
+    }
+
     return res.status(500).json({
       error: "Booking failed",
-      details: err?.response?.data || String(err),
+      details,
     });
   }
 });

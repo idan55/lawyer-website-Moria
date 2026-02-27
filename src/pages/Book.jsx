@@ -23,6 +23,7 @@ const Book = () => {
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [loadingSlots, setLoadingSlots] = useState(false);
   const [slotError, setSlotError] = useState("");
+  const [calendarNeedsConnect, setCalendarNeedsConnect] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -42,6 +43,7 @@ const Book = () => {
     async function fetchSlots() {
       setLoadingSlots(true);
       setSlotError("");
+      setCalendarNeedsConnect(false);
       setSelectedSlot(null);
 
       try {
@@ -51,6 +53,10 @@ const Book = () => {
         );
         const data = await response.json();
         if (!response.ok) {
+          if (data.code === "GOOGLE_NOT_CONNECTED") {
+            setCalendarNeedsConnect(true);
+            throw new Error(t("book.errors.connectCalendar"));
+          }
           throw new Error(data.error || t("book.errors.fetchSlots"));
         }
         setSlots(Array.isArray(data.availableSlots) ? data.availableSlots : []);
@@ -106,6 +112,10 @@ const Book = () => {
       const data = await response.json();
 
       if (!response.ok) {
+        if (data.code === "GOOGLE_NOT_CONNECTED") {
+          setCalendarNeedsConnect(true);
+          throw new Error(t("book.errors.connectCalendar"));
+        }
         throw new Error(data.error || t("book.errors.bookFailed"));
       }
 
@@ -170,6 +180,14 @@ const Book = () => {
                   <h2 className="card-title">{t("book.available")}</h2>
                   {loadingSlots ? <p className="card-copy">{t("book.loading")}</p> : null}
                   {slotError ? <p className="error-text">{slotError}</p> : null}
+                  {calendarNeedsConnect ? (
+                    <a
+                      className="ghost-button inline-flex"
+                      href={`${apiBase}/auth/google`}
+                    >
+                      {t("book.connectGoogle")}
+                    </a>
+                  ) : null}
 
                   <div className="grid grid-cols-3 gap-2 md:grid-cols-4">
                     {slots.map((slot) => (

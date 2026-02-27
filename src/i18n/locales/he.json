@@ -161,7 +161,8 @@
     "errors": {
       "fetchSlots": "לא ניתן לטעון שעות זמינות.",
       "selectSlot": "יש לבחור שעה פנויה לפני שליחה.",
-      "bookFailed": "ההזמנה נכשלה. נסו שעה אחרת."
+      "bookFailed": "ההזמנה נכשלה. נסו שעה אחרת.",
+      "connectCalendar": "Google Calendar אינו מחובר. יש לחבר אותו כדי לטעון זמינות."
     },
     "defaultService": "ייעוץ משפטי כללי",
     "languages": {
@@ -169,7 +170,8 @@
       "fr": "צרפתית",
       "he": "עברית",
       "nl": "הולנדית"
-    }
+    },
+    "connectGoogle": "חיבור Google Calendar"
   },
   "services": {
     "eyebrow": "שירותים",

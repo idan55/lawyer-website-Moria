@@ -161,7 +161,8 @@
     "errors": {
       "fetchSlots": "Impossible de charger les horaires.",
       "selectSlot": "Selectionnez un horaire avant de continuer.",
-      "bookFailed": "Echec de reservation. Essayez un autre horaire."
+      "bookFailed": "Echec de reservation. Essayez un autre horaire.",
+      "connectCalendar": "Google Calendar n’est pas connecté. Veuillez le connecter pour charger les disponibilités."
     },
     "defaultService": "Consultation juridique générale",
     "languages": {
@@ -169,7 +170,8 @@
       "fr": "Français",
       "he": "Hébreu",
       "nl": "Néerlandais"
-    }
+    },
+    "connectGoogle": "Connecter Google Calendar"
   },
   "services": {
     "eyebrow": "Services",

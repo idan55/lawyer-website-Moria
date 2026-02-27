@@ -161,7 +161,8 @@
     "errors": {
       "fetchSlots": "Could not load available slots.",
       "selectSlot": "Select an available slot before submitting.",
-      "bookFailed": "Booking failed. Please try another slot."
+      "bookFailed": "Booking failed. Please try another slot.",
+      "connectCalendar": "Google Calendar is not connected. Please connect it to load availability."
     },
     "defaultService": "General legal consultation",
     "languages": {
@@ -169,7 +170,8 @@
       "fr": "French",
       "he": "Hebrew",
       "nl": "Dutch"
-    }
+    },
+    "connectGoogle": "Connect Google Calendar"
   },
   "services": {
     "eyebrow": "Services",
