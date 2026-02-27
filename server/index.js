@@ -7,6 +7,7 @@ import session from "express-session";
 import authRoutes from "./routes/auth.js";
 import availabilityRoutes from "./routes/availabilty.js";
 import bookRoutes from "./routes/book.js";
+import contactRoutes from "./routes/contact.js";
 const app = express();
 app.use(helmet());
 app.use(
@@ -30,6 +31,7 @@ app.use(
 app.use(express.json());
 app.use("/availability", availabilityRoutes);
 app.use("/book", bookRoutes);
+app.use("/contact", contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 

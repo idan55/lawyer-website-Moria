@@ -124,7 +124,17 @@
       "phonePlaceholder": "Numéro de téléphone",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Votre question ou le sujet juridique à traiter...",
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "submitting": "Envoi en cours...",
+      "success": "Votre message a été envoyé. Un e-mail de confirmation vous a été envoyé.",
+      "errors": {
+        "nameRequired": "Veuillez saisir votre nom.",
+        "invalidPhone": "Veuillez saisir un numéro international valide (exemple : +972546225654).",
+        "invalidEmail": "Veuillez saisir une adresse e-mail valide.",
+        "messageRequired": "Veuillez saisir votre question ou votre demande.",
+        "consentRequired": "Vous devez accepter le traitement des données avant l’envoi.",
+        "sendFailed": "Échec de l’envoi du message. Veuillez réessayer."
+      }
     },
     "contactWhatsapp": "WhatsApp"
   },

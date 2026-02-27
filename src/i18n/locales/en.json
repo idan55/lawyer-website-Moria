@@ -124,7 +124,17 @@
       "phonePlaceholder": "Phone number",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Your question or the issue you want to resolve...",
-      "submit": "Submit"
+      "submit": "Submit",
+      "submitting": "Sending...",
+      "success": "Your message has been sent. A confirmation email has been sent to your inbox.",
+      "errors": {
+        "nameRequired": "Please enter your name.",
+        "invalidPhone": "Enter a valid international phone number (for example: +972546225654).",
+        "invalidEmail": "Enter a valid email address.",
+        "messageRequired": "Please enter your question or issue.",
+        "consentRequired": "You must approve personal data processing before submitting.",
+        "sendFailed": "Failed to send your message. Please try again."
+      }
     },
     "contactWhatsapp": "WhatsApp"
   },

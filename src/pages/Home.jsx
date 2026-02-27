@@ -5,10 +5,19 @@ import OfficeMap from "../components/OfficeMap";
 const Home = () => {
   const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("lawyer");
+  const apiBase = import.meta.env.VITE_API_URL || "http://localhost:3000";
   const lat = 32.0831515;
   const lng = 34.8567889;
   const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
   const wazeUrl = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
+  const [contactName, setContactName] = useState("");
+  const [contactPhone, setContactPhone] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
+  const [contactConsent, setContactConsent] = useState(false);
+  const [contactLoading, setContactLoading] = useState(false);
+  const [contactError, setContactError] = useState("");
+  const [contactSuccess, setContactSuccess] = useState("");
 
   const lawyerServices = [
     {
@@ -91,6 +100,77 @@ const Home = () => {
     t("home.advantages.payments"),
     t("home.advantages.hours"),
   ];
+
+  function isValidPhone(value) {
+    const normalized = String(value || "").replace(/[\s\-().]/g, "");
+    if (!/^\+?\d+$/.test(normalized)) return false;
+    const digitsOnly = normalized.startsWith("+")
+      ? normalized.slice(1)
+      : normalized;
+    return digitsOnly.length >= 7 && digitsOnly.length <= 15;
+  }
+
+  function isValidEmail(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || "").trim());
+  }
+
+  async function submitContactForm(event) {
+    event.preventDefault();
+    setContactError("");
+    setContactSuccess("");
+
+    if (!contactName.trim()) {
+      setContactError(t("home.contactForm.errors.nameRequired"));
+      return;
+    }
+    if (!isValidPhone(contactPhone)) {
+      setContactError(t("home.contactForm.errors.invalidPhone"));
+      return;
+    }
+    if (!isValidEmail(contactEmail)) {
+      setContactError(t("home.contactForm.errors.invalidEmail"));
+      return;
+    }
+    if (!contactMessage.trim()) {
+      setContactError(t("home.contactForm.errors.messageRequired"));
+      return;
+    }
+    if (!contactConsent) {
+      setContactError(t("home.contactForm.errors.consentRequired"));
+      return;
+    }
+
+    setContactLoading(true);
+    try {
+      const response = await fetch(`${apiBase}/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          name: contactName,
+          phone: contactPhone,
+          email: contactEmail,
+          message: contactMessage,
+          consent: contactConsent,
+        }),
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || t("home.contactForm.errors.sendFailed"));
+      }
+
+      setContactName("");
+      setContactPhone("");
+      setContactEmail("");
+      setContactMessage("");
+      setContactConsent(false);
+      setContactSuccess(t("home.contactForm.success"));
+    } catch (err) {
+      setContactError(err.message || t("home.contactForm.errors.sendFailed"));
+    } finally {
+      setContactLoading(false);
+    }
+  }
 
   return (
     <>
@@ -243,13 +323,16 @@ const Home = () => {
                     {t("home.contactSectionTitle")}
                   </h2>
                   <div className="space-large" />
-                  <form className="contact-form-grid">
+                  <form className="contact-form-grid" onSubmit={submitContactForm}>
                     <div className="uui-form-field-wrapper">
                       <input
                         className="contact-form_input"
                         name="name"
                         placeholder={t("home.contactForm.namePlaceholder")}
                         type="text"
+                        required
+                        value={contactName}
+                        onChange={(e) => setContactName(e.target.value)}
                       />
                     </div>
                     <div className="uui-form-field-wrapper">
@@ -258,6 +341,9 @@ const Home = () => {
                         name="phone"
                         placeholder={t("home.contactForm.phonePlaceholder")}
                         type="tel"
+                        required
+                        value={contactPhone}
+                        onChange={(e) => setContactPhone(e.target.value)}
                       />
                     </div>
                     <div className="uui-form-field-wrapper">
@@ -266,6 +352,9 @@ const Home = () => {
                         name="email"
                         placeholder={t("home.contactForm.emailPlaceholder")}
                         type="email"
+                        required
+                        value={contactEmail}
+                        onChange={(e) => setContactEmail(e.target.value)}
                       />
                     </div>
                     <div className="uui-form-field-wrapper">
@@ -274,14 +363,26 @@ const Home = () => {
                         maxLength={5000}
                         placeholder={t("home.contactForm.messagePlaceholder")}
                         className="contact-form_input text-area"
+                        required
+                        value={contactMessage}
+                        onChange={(e) => setContactMessage(e.target.value)}
                       />
                     </div>
+                    {contactError ? <p className="error-text">{contactError}</p> : null}
+                    {contactSuccess ? <p className="card-copy">{contactSuccess}</p> : null}
                     <div className="contact-button-wrapper">
-                      <button type="submit" className="button-main">
-                        {t("home.contactForm.submit")}
+                      <button type="submit" className="button-main" disabled={contactLoading}>
+                        {contactLoading
+                          ? t("home.contactForm.submitting")
+                          : t("home.contactForm.submit")}
                       </button>
                       <label className="uui-form-checkbox">
-                        <input type="checkbox" required />
+                        <input
+                          type="checkbox"
+                          required
+                          checked={contactConsent}
+                          onChange={(e) => setContactConsent(e.target.checked)}
+                        />
                         <span className="uui-form-checkbox-label">
                           {t("home.contactFormConsent")}
                         </span>

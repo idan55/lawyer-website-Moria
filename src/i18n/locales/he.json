@@ -124,7 +124,17 @@
       "phonePlaceholder": "מספר טלפון",
       "emailPlaceholder": "אימייל",
       "messagePlaceholder": "השאלה שלך או העניין המשפטי שברצונך לקדם...",
-      "submit": "שליחה"
+      "submit": "שליחה",
+      "submitting": "שולח...",
+      "success": "ההודעה נשלחה בהצלחה. נשלח אליך מייל אישור לתיבה.",
+      "errors": {
+        "nameRequired": "נא להזין שם.",
+        "invalidPhone": "יש להזין מספר טלפון בינלאומי תקין (לדוגמה: +972546225654).",
+        "invalidEmail": "יש להזין כתובת דוא\"ל תקינה.",
+        "messageRequired": "נא להזין שאלה או נושא לפנייה.",
+        "consentRequired": "יש לאשר עיבוד נתונים אישיים לפני השליחה.",
+        "sendFailed": "שליחת ההודעה נכשלה. נא לנסות שוב."
+      }
     },
     "contactWhatsapp": "וואטסאפ"
   },

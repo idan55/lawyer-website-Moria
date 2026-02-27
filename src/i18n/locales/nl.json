@@ -124,7 +124,17 @@
       "phonePlaceholder": "Telefoonnummer",
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Uw vraag of het juridische onderwerp dat u wilt oplossen...",
-      "submit": "Verzenden"
+      "submit": "Verzenden",
+      "submitting": "Verzenden...",
+      "success": "Je bericht is verzonden. Er is een bevestigingsmail naar je inbox gestuurd.",
+      "errors": {
+        "nameRequired": "Voer je naam in.",
+        "invalidPhone": "Voer een geldig internationaal telefoonnummer in (bijvoorbeeld: +972546225654).",
+        "invalidEmail": "Voer een geldig e-mailadres in.",
+        "messageRequired": "Voer je vraag of onderwerp in.",
+        "consentRequired": "Je moet akkoord gaan met gegevensverwerking voordat je verzendt.",
+        "sendFailed": "Verzenden van je bericht is mislukt. Probeer het opnieuw."
+      }
     },
     "contactWhatsapp": "WhatsApp"
   },
