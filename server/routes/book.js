@@ -193,6 +193,37 @@ router.post("/", async (req, res) => {
     const details = err?.response?.data || String(err);
     const message = String(err?.message || "").toLowerCase();
     const providerError = String(err?.response?.data?.error || "").toLowerCase();
+    const providerPayload = err?.response?.data?.error;
+    const providerStatus = String(providerPayload?.status || "").toLowerCase();
+    const providerMessage = String(providerPayload?.message || "").toLowerCase();
+    const hasInsufficientPermissionReason = Array.isArray(providerPayload?.errors)
+      ? providerPayload.errors.some(
+          (item) => String(item?.reason || "").toLowerCase() === "insufficientpermissions"
+        )
+      : false;
+    const hasScopeInsufficientDetail = Array.isArray(providerPayload?.details)
+      ? providerPayload.details.some(
+          (item) =>
+            String(item?.reason || "").toLowerCase() === "access_token_scope_insufficient"
+        )
+      : false;
+
+    const scopeInsufficient =
+      providerError === "insufficientpermissions" ||
+      providerStatus === "permission_denied" ||
+      providerMessage.includes("insufficient authentication scopes") ||
+      String(details).toLowerCase().includes("insufficient authentication scopes") ||
+      String(details).toLowerCase().includes("access_token_scope_insufficient") ||
+      hasInsufficientPermissionReason ||
+      hasScopeInsufficientDetail;
+
+    if (scopeInsufficient) {
+      return res.status(401).json({
+        error: "Google Calendar permissions are insufficient",
+        code: "GOOGLE_RECONNECT_REQUIRED",
+        details,
+      });
+    }
 
     if (message.includes("no google tokens stored") || providerError === "invalid_grant") {
       return res.status(401).json({

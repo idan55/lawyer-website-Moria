@@ -5,9 +5,8 @@ import { getOAuthClient } from "../google/googleClient.js";
 
 const router = express.Router();
 
-// Pick scopes (good for reading + creating events)
-const SCOPES = ["https://www.googleapis.com/auth/calendar.events"];
-
+// Full Calendar scope (read + availability + create/update events)
+const SCOPES = ["https://www.googleapis.com/auth/calendar"];
 router.get("/google", (req, res) => {
   const oauth2Client = getOAuthClient();
 

@@ -27,8 +27,7 @@ export async function getValidAccessToken() {
     await pool.query(
       `UPDATE google_tokens
        SET access_token=$1,
-           expiry_date=$2,
-           updated_at=NOW()
+           expiry_date=$2
        WHERE id=1`,
       [credentials.access_token, credentials.expiry_date]
     );

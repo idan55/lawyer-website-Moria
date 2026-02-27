@@ -53,7 +53,10 @@ const Book = () => {
         );
         const data = await response.json();
         if (!response.ok) {
-          if (data.code === "GOOGLE_NOT_CONNECTED") {
+          if (
+            data.code === "GOOGLE_NOT_CONNECTED" ||
+            data.code === "GOOGLE_RECONNECT_REQUIRED"
+          ) {
             setCalendarNeedsConnect(true);
             throw new Error(t("book.errors.connectCalendar"));
           }
@@ -112,7 +115,10 @@ const Book = () => {
       const data = await response.json();
 
       if (!response.ok) {
-        if (data.code === "GOOGLE_NOT_CONNECTED") {
+        if (
+          data.code === "GOOGLE_NOT_CONNECTED" ||
+          data.code === "GOOGLE_RECONNECT_REQUIRED"
+        ) {
           setCalendarNeedsConnect(true);
           throw new Error(t("book.errors.connectCalendar"));
         }
