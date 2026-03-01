@@ -29,7 +29,7 @@
     "contactFormConsent": "Door het formulier te versturen gaat u akkoord met de verwerking van uw persoonsgegevens.",
     "contactOfficeHours": "Openingstijden: 9:00 – 19:00, zondag t/m donderdag",
     "contactOfficeHoursNote": "Afspraken buiten deze tijden zijn mogelijk in overleg.",
-    "contactAddress": "HaSivim 49, Petach Tikwa",
+    "contactAddress": "HaSivim 49, Petah Tikva",
     "contactMapGoogle": "Openen in Google Maps",
     "contactMapWaze": "Openen in Waze",
     "lawyerServices": {
@@ -113,7 +113,7 @@
     },
     "heroImageAlt": "Portret van mr. Moria Rodrig",
     "aboutSection": {
-      "title": "Over",
+      "title": "Over ons",
       "p1": "mr. Moria Rodrig verleent grondige, nauwkeurige en toegankelijke juridische en notariële dienstverlening, met duidelijke communicatie en persoonlijke aandacht in elke zaak.",
       "p2": "Het kantoor begeleidt zowel inwoners van Israël als cliënten in het buitenland die snelle en correcte afhandeling van documentatie en vertegenwoordiging nodig hebben.",
       "p3": "Het kantoor werkt in meerdere talen, zodat iedere cliënt uitleg en documenten ontvangt in de taal waarin hij of zij zich het meest comfortabel voelt.",
@@ -182,7 +182,8 @@
       "he": "Hebreeuws",
       "nl": "Nederlands"
     },
-    "connectGoogle": "Google Calendar koppelen"
+    "connectGoogle": "Google Calendar koppelen",
+    "reconnectRestricted": "Herverbinden van de agenda is beperkt. Neem contact op met de sitebeheerder."
   },
   "services": {
     "eyebrow": "Diensten",

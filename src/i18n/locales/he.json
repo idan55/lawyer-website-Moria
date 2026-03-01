@@ -182,7 +182,8 @@
       "he": "עברית",
       "nl": "הולנדית"
     },
-    "connectGoogle": "חיבור Google Calendar"
+    "connectGoogle": "חיבור Google Calendar",
+    "reconnectRestricted": "חיבור מחדש ליומן מוגבל. יש לפנות למנהל האתר."
   },
   "services": {
     "eyebrow": "שירותים",

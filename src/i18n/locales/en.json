@@ -182,7 +182,8 @@
       "he": "Hebrew",
       "nl": "Dutch"
     },
-    "connectGoogle": "Connect Google Calendar"
+    "connectGoogle": "Connect Google Calendar",
+    "reconnectRestricted": "Calendar reconnect is restricted. Please contact site admin."
   },
   "services": {
     "eyebrow": "Services",

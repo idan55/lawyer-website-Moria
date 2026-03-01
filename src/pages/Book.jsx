@@ -7,6 +7,7 @@ const Book = () => {
   const { i18n, t } = useTranslation();
   const baseLang = i18n.language.split("-")[0];
   const apiBase = import.meta.env.VITE_API_URL || "http://localhost:3000";
+  const canReconnectFromClient = import.meta.env.DEV;
 
   const today = useMemo(() => new Date(), []);
 
@@ -212,12 +213,16 @@ const Book = () => {
                   {loadingSlots ? <p className="card-copy">{t("book.loading")}</p> : null}
                   {slotError ? <p className="error-text">{slotError}</p> : null}
                   {calendarNeedsConnect ? (
-                    <a
-                      className="ghost-button inline-flex"
-                      href={`${apiBase}/auth/google`}
-                    >
-                      {t("book.connectGoogle")}
-                    </a>
+                    canReconnectFromClient ? (
+                      <a
+                        className="ghost-button inline-flex"
+                        href={`${apiBase}/auth/google`}
+                      >
+                        {t("book.connectGoogle")}
+                      </a>
+                    ) : (
+                      <p className="card-copy">{t("book.reconnectRestricted")}</p>
+                    )
                   ) : null}
 
                   <div className="grid grid-cols-3 gap-2 md:grid-cols-4">

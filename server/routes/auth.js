@@ -7,7 +7,28 @@ const router = express.Router();
 
 // Full Calendar scope (read + availability + create/update events)
 const SCOPES = ["https://www.googleapis.com/auth/calendar"];
+
+function canStartOAuth(req) {
+  if (process.env.NODE_ENV !== "production") return true;
+  if (String(process.env.OAUTH_CONNECT_LOCKED || "").toLowerCase() === "true") {
+    return false;
+  }
+
+  const requiredToken = process.env.OAUTH_CONNECT_TOKEN;
+  if (!requiredToken) return false;
+
+  const providedToken =
+    String(req.query.connect_token || "").trim() ||
+    String(req.get("x-oauth-connect-token") || "").trim();
+
+  return providedToken === requiredToken;
+}
+
 router.get("/google", (req, res) => {
+  if (!canStartOAuth(req)) {
+    return res.status(403).json({ error: "OAuth connect is restricted" });
+  }
+
   const oauth2Client = getOAuthClient();
 
   const state = crypto.randomBytes(24).toString("hex");

@@ -4,16 +4,16 @@
   },
   "nav": {
     "home": "Accueil",
-    "about": "A propos",
+    "about": "À propos",
     "services": "Services",
     "book": "RDV",
     "contact": "Contact",
     "language": "Langue"
   },
   "footer": {
-    "rights": "© Moria Rodrig - Cabinet juridique et notariat. Tous droits reserves.",
-    "developer": "Developpé par Idan Hadad",
-    "privacy": "Politique de confidentialite"
+    "rights": "© Moria Rodrig - Cabinet juridique et notariat. Tous droits réservés.",
+    "developer": "Développé par Idan Hadad",
+    "privacy": "Politique de confidentialité"
   },
   "home": {
     "heroEyebrow": "Cabinet d’avocate et notaire",
@@ -148,30 +148,30 @@
     "role": "Avocate et notaire"
   },
   "book": {
-    "eyebrow": "Reservation",
-    "title": "Reserver une consultation",
-    "subtitle": "Choisissez une date et un horaire puis envoyez vos details.",
+    "eyebrow": "Réservation",
+    "title": "Réserver une consultation",
+    "subtitle": "Choisissez une date et un horaire puis envoyez vos détails.",
     "fields": {
       "date": "Date",
-      "duration": "Duree",
+      "duration": "Durée",
       "name": "Nom complet",
       "email": "Email",
-      "phone": "Telephone",
+      "phone": "Téléphone",
       "service": "Service",
-      "language": "Langue de reunion"
+      "language": "Langue de réunion"
     },
     "minutes": "minutes",
     "available": "Horaires disponibles",
     "loading": "Chargement des horaires...",
-    "noSlots": "Aucun horaire disponible pour cette selection.",
-    "submit": "Confirmer la reservation",
+    "noSlots": "Aucun horaire disponible pour cette sélection.",
+    "submit": "Confirmer la réservation",
     "submitting": "Envoi...",
-    "successTitle": "Reservation confirmee",
-    "successBody": "Votre reunion est planifiee le {{date}} a {{time}}.",
+    "successTitle": "Réservation confirmée",
+    "successBody": "Votre réunion est planifiée le {{date}} à {{time}}.",
     "errors": {
       "fetchSlots": "Impossible de charger les horaires.",
-      "selectSlot": "Selectionnez un horaire avant de continuer.",
-      "bookFailed": "Echec de reservation. Essayez un autre horaire.",
+      "selectSlot": "Sélectionnez un horaire avant de continuer.",
+      "bookFailed": "Échec de réservation. Essayez un autre horaire.",
       "connectCalendar": "Google Calendar n’est pas connecté. Veuillez le connecter pour charger les disponibilités.",
       "invalidPhone": "Veuillez saisir un numéro de téléphone valide avec indicatif pays (exemple : +972546225654)."
     },
@@ -182,7 +182,8 @@
       "he": "Hébreu",
       "nl": "Néerlandais"
     },
-    "connectGoogle": "Connecter Google Calendar"
+    "connectGoogle": "Connecter Google Calendar",
+    "reconnectRestricted": "La reconnexion du calendrier est restreinte. Veuillez contacter l’administrateur du site."
   },
   "services": {
     "eyebrow": "Services",
