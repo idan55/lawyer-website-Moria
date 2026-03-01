@@ -105,7 +105,9 @@ const Layout = () => {
                       <span className="icon-phone" />
                       <span className="icon-text phone-ltr">+972-54-622-5654</span>
                     </a>
-                    <p className="footer-meta">moria@rodriglaw.com</p>
+                    <a href="mailto:moria@rodriglaw.com" className="footer-meta">
+                      moria@rodriglaw.com
+                    </a>
                   </div>
                 </div>
                 <div className="space-large" />

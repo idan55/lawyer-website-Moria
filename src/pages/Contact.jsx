@@ -17,15 +17,29 @@ const Contact = () => {
           <div className="padding-vertical-large space-y-5">
             <p className="eyebrow">{t("contact.eyebrow")}</p>
             <h1 className="section-title">{t("contact.title")}</h1>
+            <br />
             <div className="grid gap-5 md:grid-cols-2">
               <article className="content-card space-y-2">
-                <p className="card-copy">
-                  {t("contact.phoneLabel")}:{" "}
-                  <span className="phone-ltr">+972-54-622-5654</span>
-                </p>
-                <p className="card-copy">
-                  {t("contact.emailLabel")}: moria@rodriglaw.com
-                </p>
+                <a href="tel:+972546225654" className="icon-link-block-large">
+                  <span className="icon-phone" />
+                  <span>
+                    {t("contact.phoneLabel")}:{" "}
+                    <span className="phone-ltr">+972-54-622-5654</span>
+                  </span>
+                </a>
+                <a href="mailto:moria@rodriglaw.com" className="icon-link-block-large">
+                  <span className="icon-mail" />
+                  <span>{t("contact.emailLabel")}: moria@rodriglaw.com</span>
+                </a>
+                <a
+                  href="https://wa.me/972546225654"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="icon-link-block-large"
+                >
+                  <span className="icon-whatsapp" />
+                  <span>{t("home.contactWhatsapp")}</span>
+                </a>
                 <p className="card-copy">
                   {t("contact.addressLabel")}: {addressText}
                 </p>
