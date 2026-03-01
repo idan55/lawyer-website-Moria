@@ -18,8 +18,8 @@
   "home": {
     "heroEyebrow": "Advocatenkantoor en notariaat",
     "heroTitle": "Advocatenkantoor en notariaat in het hart van Israël",
-    "heroIntro": "Welkom bij het kantoor van mr. Moria Rodrig — een meertalige advocate en notaris die juridische en notariële diensten in Israël aanbiedt.",
-    "heroBody": "Het kantoor richt zich op familie- en erfrecht, immigratie en verblijfsstatus, vastgoedtransacties, testamenten en volmachten, het oprichten en begeleiden van ondernemingen en een volledig pakket notariële diensten.",
+    "heroIntro": "Welkom bij het kantoor van mr. Moria Rodrig — een meertalige advocate en notaris die juridische en notariële diensten in Israël en daarbuiten aanbiedt.",
+    "heroBody": "Het kantoor richt zich op vastgoedtransacties, vertegenwoordiging van projectontwikkelaars en particulieren, testamenten en levenstestamenten, de registratie en begeleiding van ondernemingen, evenals een breed scala aan notariële diensten.",
     "heroCta": "Afspraak maken",
     "servicesTitle": "Onze diensten",
     "lawyerTab": "Juridische diensten",
@@ -58,12 +58,12 @@
         "text": "Instructies en bevoegdheden voor het geval van wilsonbekwaamheid."
       },
       "immigration": {
-        "title": "Immigratie- en verblijfsrecht",
-        "text": "Status in Israël, verblijfsvergunningen en gezinshereniging."
+        "title": "Rechten van nieuwe immigranten en terugkerende inwoners",
+        "text": "Volledige juridische begeleiding bij statusregeling en het benutten van rechten en voorzieningen."
       },
       "realEstate": {
         "title": "Vastgoedtransacties",
-        "text": "Begeleiding bij koop, verkoop, huur en inschrijving van transacties."
+        "text": "Begeleiding bij aankoop, verkoop, verhuur, investeringen en stedelijke vernieuwingsprojecten."
       },
       "business": {
         "title": "Begeleiding van ondernemingen",
@@ -115,8 +115,10 @@
     "aboutSection": {
       "title": "Over ons",
       "p1": "mr. Moria Rodrig verleent grondige, nauwkeurige en toegankelijke juridische en notariële dienstverlening, met duidelijke communicatie en persoonlijke aandacht in elke zaak.",
-      "p2": "Het kantoor begeleidt zowel inwoners van Israël als cliënten in het buitenland die snelle en correcte afhandeling van documentatie en vertegenwoordiging nodig hebben.",
+      "p2": "Tot de cliënten van het kantoor behoren vastgoedontwikkelaars, inwoners van Israël en cliënten in het buitenland die behoefte hebben aan nauwkeurige juridische behandeling.",
       "p3": "Het kantoor werkt in meerdere talen, zodat iedere cliënt uitleg en documenten ontvangt in de taal waarin hij of zij zich het meest comfortabel voelt.",
+      "p4": "Moria is gemachtigd door de Belgische ambassade om officiële vertalingen uit te voeren.",
+      "belgiumLogoAlt": "Logo van de Belgische ambassade",
       "imageAlt": "Team van het kantoor"
     },
     "contactForm": {
@@ -145,7 +147,8 @@
     "p2": "Dossiers worden behandeld met zorgvuldige planning, precieze documentatie en begeleiding tot de afronding.",
     "p3": "Moria Rodrig, advocate en notaris, beschikt over ruime professionele ervaring in het vastgoedrecht en het civiel-commercieel recht. In de loop der jaren heeft zij een sterke praktijkexpertise opgebouwd in de begeleiding van complexe vastgoedtransacties, met nauwkeurige juridische oplossingen die worden afgestemd op de behoeften van iedere cliënt.\n\nHaar kantoor biedt volledige juridische begeleiding bij vastgoedtransacties: van de voorbereidende controles, via onderhandelingen en contractopmaak, tot en met de definitieve registratie bij het kadaster.\n\nMoria heeft bijzondere expertise in de begeleiding van buitenlandse cliënten en staat doorlopend cliënten uit Israël en het buitenland bij in vastgoedzaken, notariële documentatie en grensoverschrijdende procedures, met dienstverlening in meerdere talen en efficiënte, zorgvuldige behandeling, ook op afstand waar nodig.\n\nDaarnaast is het kantoor gespecialiseerd in testamenten, levenstestamenten (duurzame volmachten), commerciële overeenkomsten en notariële dienstverlening conform de geldende regelgeving, met voortdurende nadruk op professionaliteit, bereikbaarheid en persoonlijke begeleiding.\n\nNaast haar professionele werkzaamheden is Moria ook maatschappelijk actief. Zij is voorzitter van de Vereniging van Belgische immigranten in Israël en fungeert tevens als gemeentelijk vertegenwoordiger in het forum van echtgenotes van reservisten, vanuit een sterke betrokkenheid bij de gemeenschap en sociale veerkracht.\n\nMoria gelooft in de combinatie van juridische precisie, strategisch denken en persoonlijke service, en begeleidt haar cliënten met vertrouwen en transparantie tot het best haalbare resultaat is bereikt.",
     "name": "mr. Moria Rodrig",
-    "role": "Advocate en notaris"
+    "role": "Advocate en notaris",
+    "pressTitle": "Uit de pers"
   },
   "book": {
     "eyebrow": "Boeken",
@@ -195,10 +198,10 @@
       "consulting": "Civiel- en handelsrechtelijk juridisch advies",
       "contracts": "Opstellen, beoordelen en onderhandelen van contracten",
       "property": "Vertegenwoordiging in vastgoed- en transactiezaken",
-      "inheritance": "Begeleiding bij erfrechtelijke procedures"
+      "inheritance": "Opstellen van testamenten en levenstestamenten"
     },
     "notaryItems": {
-      "signatures": "Verificatie en legalisatie van handtekeningen",
+      "signatures": "Notariële vertalingen in talen: Engels, Frans, Hebreeuws, Vlaams\\Nederlands",
       "affidavits": "Notariële verklaringen en volmachten",
       "copies": "Gecertificeerde kopieën van officiële documenten",
       "confirmations": "Notariële verklaringen voor lokaal en grensoverschrijdend gebruik"

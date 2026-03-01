@@ -17,9 +17,9 @@
   },
   "home": {
     "heroEyebrow": "Cabinet d’avocate et notaire",
-    "heroTitle": "Cabinet d’avocate et notaire au centre d’Israël",
-    "heroIntro": "Bienvenue au cabinet de Me Moria Rodrig — avocate et notaire trilingue offrant des services juridiques et notariés en Israël.",
-    "heroBody": "Le cabinet est spécialisé en droit de la famille et des successions, immigration et statut, transactions immobilières, testaments et procurations, création et accompagnement de sociétés, ainsi qu’en services notariés complets.",
+    "heroTitle": "Cabinet d’avocate et notaire - Moria Rodrig",
+    "heroIntro": "Bienvenue au cabinet de Me Moria Rodrig — avocate et notaire trilingue offrant des services juridiques et notariés en Israël et à l'étranger.",
+    "heroBody": "Le cabinet se concentre sur les transactions immobilières, la représentation de promoteurs et de particuliers, les testaments et procurations durables, l’enregistrement et l’accompagnement des entreprises, ainsi qu’un large éventail de services notariés.",
     "heroCta": "Prendre rendez-vous",
     "servicesTitle": "Nos services",
     "lawyerTab": "Services juridiques",
@@ -58,12 +58,12 @@
         "text": "Directives en cas d’incapacité et désignation de mandataire."
       },
       "immigration": {
-        "title": "Droit de l’immigration",
-        "text": "Statut en Israël, permis de séjour et regroupement familial."
+        "title": "Droits des nouveaux immigrants et des résidents de retour",
+        "text": "Accompagnement juridique complet pour la régularisation du statut et l’exercice de vos droits et avantages."
       },
       "realEstate": {
         "title": "Transactions immobilières",
-        "text": "Accompagnement pour l’achat, la vente, la location et l’enregistrement."
+        "text": "Accompagnement pour l’achat, la vente, la location, l’investissement et les projets de renouvellement urbain."
       },
       "business": {
         "title": "Accompagnement d’entreprises",
@@ -115,8 +115,10 @@
     "aboutSection": {
       "title": "À propos",
       "p1": "Me Moria Rodrig fournit des services juridiques et notariés rigoureux, précis et accessibles, avec une communication claire et un suivi personnel pour chaque dossier.",
-      "p2": "Le cabinet accompagne des résidents d’Israël ainsi que des clients à l’étranger nécessitant un traitement rapide et exact de leurs documents et procédures.",
+      "p2": "Parmi les clients du cabinet figurent des promoteurs immobiliers, des résidents d’Israël ainsi que des clients à l’étranger ayant besoin d’un traitement juridique précis.",
       "p3": "Le cabinet travaille dans plusieurs langues afin que chaque client reçoive explications et documents dans la langue qui lui convient le mieux.",
+      "p4": "Me Moria est autorisée par l’Ambassade de Belgique à effectuer des traductions officielles.",
+      "belgiumLogoAlt": "Logo de l'ambassade de Belgique",
       "imageAlt": "Équipe du cabinet"
     },
     "contactForm": {
@@ -145,7 +147,8 @@
     "p2": "Chaque dossier est géré avec une planification rigoureuse, une documentation soignée et un accompagnement jusqu’à son aboutissement.",
     "p3": "Me Moria Rodrig, avocate et notaire, dispose d’une expérience professionnelle de longue date en droit immobilier et en droit civil-commercial. Au fil des années, elle a acquis une expertise pratique reconnue dans l’accompagnement de transactions immobilières complexes, en apportant des solutions juridiques précises et adaptées aux besoins de chaque client.\n\nSon cabinet assure un accompagnement juridique complet des opérations immobilières, depuis les vérifications préalables, en passant par la négociation et la rédaction contractuelle, jusqu’à l’achèvement de l’enregistrement auprès du registre foncier.\n\nMe Rodrig possède une compétence particulière dans le suivi des résidents étrangers et accompagne régulièrement des clients d’Israël et de l’international en matière immobilière, dans la régularisation de documents notariés et dans des procédures transfrontalières, grâce à une pratique multilingue et un service rigoureux, y compris à distance lorsque nécessaire.\n\nPar ailleurs, son cabinet intervient en matière de testaments, de procurations durables, de contrats commerciaux et de services notariés conformément aux dispositions applicables, avec une exigence constante de professionnalisme, de disponibilité et d’accompagnement personnalisé.\n\nAu-delà de son activité professionnelle, Me Rodrig est engagée dans la vie publique. Elle préside l’Association des ressortissants belges en Israël et agit également comme représentante municipale au sein du Forum des épouses de réservistes, illustrant son attachement à la communauté et au renforcement de la résilience sociale.\n\nMe Rodrig défend une approche qui associe précision juridique, vision stratégique et relation humaine de proximité, et accompagne ses clients avec clarté et transparence jusqu’à l’obtention du meilleur résultat possible.",
     "name": "Me Moria Rodrig",
-    "role": "Avocate et notaire"
+    "role": "Avocate et notaire",
+    "pressTitle": "Dans la presse"
   },
   "book": {
     "eyebrow": "Réservation",
@@ -195,10 +198,10 @@
       "consulting": "Conseil juridique civil et commercial",
       "contracts": "Rédaction, révision et négociation de contrats",
       "property": "Représentation en matière immobilière et transactionnelle",
-      "inheritance": "Accompagnement des procédures successorales"
+      "inheritance": "Preparation de testaments et procurations durables"
     },
     "notaryItems": {
-      "signatures": "Vérification et certification de signatures",
+      "signatures": "Traductions notariales en langues: anglais, français, hébreu, flamand\\néerlandais",
       "affidavits": "Déclarations notariales et procurations",
       "copies": "Copies certifiées conformes de documents officiels",
       "confirmations": "Attestations notariales pour usage local et international"

@@ -1,8 +1,10 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { useEffect } from "react";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Layout = () => {
   const { i18n, t } = useTranslation();
+  const location = useLocation();
 
   const navItems = [
     { to: "/", label: t("nav.home") },
@@ -12,6 +14,105 @@ const Layout = () => {
   ];
 
   const baseLang = i18n.language.split("-")[0];
+
+  useEffect(() => {
+    const main = document.querySelector(".page-main");
+    if (!main) return;
+
+    // Subtle page transition on route changes.
+    main.classList.remove("page-main-enter");
+    const raf = window.requestAnimationFrame(() => {
+      main.classList.add("page-main-enter");
+    });
+
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    const connection = navigator.connection || navigator.mozConnection;
+    const saveData = Boolean(connection?.saveData);
+    const lowDeviceMemory =
+      typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4;
+    const lowPowerMode = prefersReducedMotion || saveData || lowDeviceMemory;
+
+    const targets = Array.from(
+      main.querySelectorAll(
+        [
+          ".page-main section > .page-padding > .container-large > .padding-vertical-large > *",
+          ".page-main section > .page-padding > .container-large > .padding-vertical-medium > *",
+          ".section_hero .hero-grid > *",
+          ".section_about .about-grid > *",
+          ".section_about .about-wrapper-flex > *",
+          ".services-grid > .service-cell",
+          ".features-grid > .feature-cell",
+          ".section_contact .grid > *",
+          ".section_contact .contact-map-wrapper",
+          ".section_services .content-card",
+          ".section_contact .success-panel",
+          ".section_contact .slot-chip",
+          ".section_contact .contact-action-link",
+          ".section_contact .map-link-button",
+          ".section_contact .button-main",
+          ".section_contact .cta-button",
+          ".section_contact .ghost-button",
+          ".section_contact .contact-form-wrapper",
+          ".section_contact .contact-list",
+          ".section_contact .mapbox-card",
+          ".privacy-card",
+        ].join(",")
+      )
+    );
+
+    const uniqueTargets = Array.from(new Set(targets));
+    if (uniqueTargets.length === 0) {
+      window.cancelAnimationFrame(raf);
+      return;
+    }
+
+    uniqueTargets.forEach((element, index) => {
+      element.classList.add("reveal");
+      element.style.setProperty("--reveal-delay", `${(index % 8) * 55}ms`);
+    });
+
+    if (lowPowerMode) {
+      document.body.classList.add("motion-lite");
+      uniqueTargets.forEach((element) => element.classList.add("is-visible"));
+      window.cancelAnimationFrame(raf);
+      return;
+    }
+    document.body.classList.remove("motion-lite");
+
+    const observer = new IntersectionObserver(
+      (entries, currentObserver) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          currentObserver.unobserve(entry.target);
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px 0px -12% 0px",
+        threshold: 0.14,
+      }
+    );
+
+    uniqueTargets.forEach((element) => observer.observe(element));
+
+    return () => {
+      window.cancelAnimationFrame(raf);
+      observer.disconnect();
+    };
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const chromeTargets = document.querySelectorAll(
+      ".navbar, .navbar-brand, .navbar-menu .navbar-link, .footer .footer-grid > *, .footer-credentials-wrapper"
+    );
+    chromeTargets.forEach((element, index) => {
+      element.classList.add("reveal", "is-visible");
+      element.style.setProperty("--reveal-delay", `${index * 45}ms`);
+    });
+  }, []);
 
   return (
     <div className="body">

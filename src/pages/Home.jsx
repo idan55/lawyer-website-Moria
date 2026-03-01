@@ -21,24 +21,16 @@ const Home = () => {
 
   const lawyerServices = [
     {
+      title: t("home.lawyerServices.realEstate.title"),
+      text: t("home.lawyerServices.realEstate.text"),
+    },
+    {
       title: t("home.lawyerServices.prenup.title"),
       text: t("home.lawyerServices.prenup.text"),
     },
     {
-      title: t("home.lawyerServices.divorce.title"),
-      text: t("home.lawyerServices.divorce.text"),
-    },
-    {
-      title: t("home.lawyerServices.property.title"),
-      text: t("home.lawyerServices.property.text"),
-    },
-    {
       title: t("home.lawyerServices.inheritance.title"),
       text: t("home.lawyerServices.inheritance.text"),
-    },
-    {
-      title: t("home.lawyerServices.paternity.title"),
-      text: t("home.lawyerServices.paternity.text"),
     },
     {
       title: t("home.lawyerServices.epo.title"),
@@ -47,10 +39,6 @@ const Home = () => {
     {
       title: t("home.lawyerServices.immigration.title"),
       text: t("home.lawyerServices.immigration.text"),
-    },
-    {
-      title: t("home.lawyerServices.realEstate.title"),
-      text: t("home.lawyerServices.realEstate.text"),
     },
     {
       title: t("home.lawyerServices.business.title"),
@@ -220,6 +208,14 @@ const Home = () => {
                     <p>{t("home.aboutSection.p1")}</p>
                     <p>{t("home.aboutSection.p2")}</p>
                     <p>{t("home.aboutSection.p3")}</p>
+                    <div className="about-language-cert">
+                      <img
+                        src="/media/belgianLogo.jpeg"
+                        alt={t("home.aboutSection.belgiumLogoAlt")}
+                        className="about-belgian-logo"
+                      />
+                      <p>{t("home.aboutSection.p4")}</p>
+                    </div>
                   </div>
                   <div className="about-image-wrapper">
                     <img

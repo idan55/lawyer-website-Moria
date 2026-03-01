@@ -17,9 +17,9 @@
   },
   "home": {
     "heroEyebrow": "Law Office and Notary",
-    "heroTitle": "Law office and notary in the center of Israel",
-    "heroIntro": "Welcome to the office of Adv. Moria Rodrig — a multilingual lawyer and notary providing legal and notarial services in Israel.",
-    "heroBody": "The office focuses on family, inheritance and immigration law, real estate transactions, wills and powers of attorney, business registration and support, as well as a full range of notarial services.",
+    "heroTitle": "Law office and notary - Moria Rodrig",
+    "heroIntro": "Welcome to the office of Adv. Moria Rodrig — a multilingual lawyer and notary providing legal and notarial services in Israel and abroad.",
+    "heroBody": "The office focuses on real estate transactions, representation of developers and private clients, wills and enduring powers of attorney, business registration and support, as well as a wide range of notarial services.",
     "heroCta": "Schedule an appointment",
     "servicesTitle": "Our services",
     "lawyerTab": "Lawyer services",
@@ -58,12 +58,12 @@
         "text": "Directives in case of incapacity and guardianship."
       },
       "immigration": {
-        "title": "Immigration law",
-        "text": "Status in Israel, residence permits, family unification."
+        "title": "Rights of New Immigrants and Returning Residents",
+        "text": "Comprehensive legal guidance for status regularization and full realization of rights and benefits."
       },
       "realEstate": {
         "title": "Real estate transactions",
-        "text": "Secure purchase, sale, lease and registration."
+        "text": "Guidance for purchases, sales, rentals, investments, and urban renewal projects."
       },
       "business": {
         "title": "Business support",
@@ -115,8 +115,10 @@
     "aboutSection": {
       "title": "About",
       "p1": "Adv. Moria Rodrig provides thorough, precise and accessible legal and notarial services, placing clear communication and personal attention at the center of each case.",
-      "p2": "Clients include residents of Israel as well as people abroad who require fast and accurate handling of documentation and representation.",
+      "p2": "Clients include real estate developers, residents of Israel, as well as clients abroad who require precise legal handling.",
       "p3": "The office works in several languages, allowing each client to receive explanations and documents in the language they are most comfortable with.",
+      "p4": "Moria is authorized by the Embassy of Belgium to perform official translations.",
+      "belgiumLogoAlt": "Belgian embassy logo",
       "imageAlt": "Law office team"
     },
     "contactForm": {
@@ -145,7 +147,8 @@
     "p2": "Matters are handled with practical planning, accurate documentation, and close follow-up until completion.",
     "p3": "Moria Rodrig, Advocate and Notary, is an experienced legal professional with extensive practice in real estate and civil-commercial law. Over the years, she has developed strong practical expertise in handling complex property transactions, while providing precise legal solutions tailored to each client’s needs.\n\nHer office provides comprehensive legal support for real estate transactions from preliminary due diligence, through negotiation and contract drafting, and up to final registration with the Land Registry.\n\nMoria has unique expertise in representing foreign residents and regularly advises clients from Israel and abroad in real estate matters, notarial documentation, and cross-border legal procedures, with multilingual service delivered efficiently and accurately, including remote handling where required.\n\nIn addition, her office handles wills, enduring powers of attorney, commercial agreements, and full notarial services in accordance with applicable regulations, with consistent emphasis on professionalism, availability, and personal guidance throughout the process.\n\nBeyond her legal practice, Moria is active in public service and serves as Chair of the Association of Belgian Immigrants in Israel, and as a municipal representative in the Reservists’ Wives Forum, reflecting a deep commitment to community and social resilience.\n\nMoria believes in combining legal precision, strategic thinking, and personal service, and accompanies her clients with confidence and transparency until the optimal result is achieved.",
     "name": "Adv. Moria Rodrig",
-    "role": "Lawyer and Notary"
+    "role": "Lawyer and Notary",
+    "pressTitle": "From the Press"
   },
   "book": {
     "eyebrow": "Booking",
@@ -193,12 +196,12 @@
     "note": "Comprehensive representation, strategic advice and notarial certification adapted to private and business clients.",
     "legalItems": {
       "consulting": "Civil and commercial legal consulting",
-      "contracts": "Contract drafting, review and negotiation",
+      "contracts": "Contract drafting, review, and negotiation of contracts",
       "property": "Representation in property and transaction matters",
-      "inheritance": "Guidance for inheritance and estate proceedings"
+      "inheritance": "Preparation of wills and enduring powers of attorney"
     },
     "notaryItems": {
-      "signatures": "Verification and certification of signatures",
+      "signatures": "Notarial translations in languages: English, French, Hebrew, Flemish\\Dutch",
       "affidavits": "Notarial affidavits and powers of attorney",
       "copies": "Certified true copies of official documents",
       "confirmations": "Notarial confirmations for local and cross-border use"
