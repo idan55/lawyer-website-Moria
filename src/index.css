@@ -372,6 +372,8 @@ a {
 
 .press-section {
   margin-top: 0.6rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .press-section-break {
@@ -383,7 +385,7 @@ a {
 .press-grid {
   display: grid;
   gap: 0.9rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .press-feature-card {
@@ -458,12 +460,13 @@ a {
 }
 
 .press-link-card {
-  display: grid;
-  gap: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: 1px solid #e3e8f2;
   border-radius: 14px;
   background: #ffffff;
-  padding: 0.95rem 1rem;
+  padding: 0.85rem 0.95rem;
   color: #1f2937;
   text-decoration: none;
   box-shadow: 0 14px 32px -32px rgba(15, 23, 42, 0.9);
@@ -482,11 +485,14 @@ a {
   color: #111827;
 }
 
-.press-url {
-  font-size: 0.83rem;
-  line-height: 1.45;
-  color: #546174;
-  word-break: break-all;
+.press-link-arrow {
+  font-size: 1rem;
+  color: #4b5b73;
+  line-height: 1;
+}
+
+.press-link-card:hover .press-link-arrow {
+  color: #1e293b;
 }
 
 @media (max-width: 760px) {

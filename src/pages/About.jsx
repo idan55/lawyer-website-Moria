@@ -62,7 +62,6 @@ const About = () => {
             <div className="space-small" />
             <div className="press-section space-y-3">
               <h2 className="header-small">{t("about.pressTitle")}</h2>
-              <br />
               <a
                 href="https://blogs.timesofisrael.com/multiculturalism-is-dead-anti-semitism-is-alive/"
                 target="_blank"
@@ -99,7 +98,9 @@ const About = () => {
                     className="press-link-card"
                   >
                     <span className="press-source">{item.source}</span>
-                    <span className="press-url">{item.url}</span>
+                    <span className="press-link-arrow" aria-hidden="true">
+                      ↗
+                    </span>
                   </a>
                 ))}
               </div>
