@@ -101,12 +101,38 @@ const Layout = () => {
                     </div>
                   </div>
                   <div className="footer-contacts-wrapper">
-                    <a href="tel:+972546225654" className="icon-link-block">
-                      <span className="icon-phone" />
+                    <a href="tel:+972546225654" className="footer-contact-link">
+                      <span className="footer-contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M6.6 3.8a2 2 0 0 1 2.2-.5l2.2.9a2 2 0 0 1 1.2 2.3l-.4 2a2 2 0 0 1-1.7 1.6c.9 1.9 2.4 3.4 4.3 4.3a2 2 0 0 1 1.6-1.7l2-.4a2 2 0 0 1 2.3 1.2l.9 2.2a2 2 0 0 1-.5 2.2l-1.2 1.2a3 3 0 0 1-3 .8c-3.1-.8-6.1-2.7-8.8-5.3-2.6-2.7-4.5-5.7-5.3-8.8a3 3 0 0 1 .8-3L6.6 3.8Z"
+                            stroke="currentColor"
+                            strokeWidth="1.7"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
                       <span className="icon-text phone-ltr">+972-54-622-5654</span>
                     </a>
-                    <a href="mailto:moria@rodriglaw.com" className="footer-meta">
-                      moria@rodriglaw.com
+                    <a href="mailto:moria@rodriglaw.com" className="footer-contact-link">
+                      <span className="footer-contact-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 16.5v-9Z"
+                            stroke="currentColor"
+                            strokeWidth="1.7"
+                          />
+                          <path
+                            d="m5 8 7 5 7-5"
+                            stroke="currentColor"
+                            strokeWidth="1.7"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span className="footer-meta">moria@rodriglaw.com</span>
                     </a>
                   </div>
                 </div>
