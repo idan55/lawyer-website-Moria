@@ -43,6 +43,26 @@ router.get("/", async (req, res) => {
 
     const startOfDay = dateAtOfficeStart;
     const endOfDay = buildDateTime(date, OFFICE_END_HOUR);
+    const now = new Date();
+
+    if (endOfDay <= now) {
+      const emptySlots =
+        requestedDuration === 30
+          ? []
+          : requestedDuration === 60
+            ? []
+            : { "30": [], "60": [] };
+
+      return res.json({
+        date,
+        officeHours: {
+          start: `${String(OFFICE_START_HOUR).padStart(2, "0")}:00`,
+          end: `${String(OFFICE_END_HOUR).padStart(2, "0")}:00`,
+        },
+        busy: [],
+        availableSlots: emptySlots,
+      });
+    }
 
     const response = await calendar.freebusy.query({
       requestBody: {
@@ -58,7 +78,9 @@ router.get("/", async (req, res) => {
       end: new Date(window.end),
     }));
 
-    const candidates = buildCandidateSlots(startOfDay, endOfDay);
+    const candidates = buildCandidateSlots(startOfDay, endOfDay).filter(
+      ({ start }) => start > now
+    );
 
     const slot30 = toSlots(candidates, 30, busyWindows);
     const slot60 = toSlots(candidates, 60, busyWindows);

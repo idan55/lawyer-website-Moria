@@ -72,6 +72,11 @@ function parseBookingPayload(body) {
   const [hour, minute] = start.split(":").map(Number);
   const startTime = buildDateTime(date, hour, minute);
   const endTime = addMinutes(startTime, duration);
+  const now = new Date();
+
+  if (startTime <= now) {
+    return createValidationError("Requested slot must be in the future");
+  }
 
   if (!isWorkingDay(startTime)) {
     return createValidationError("Appointments are available Sunday to Thursday only");
