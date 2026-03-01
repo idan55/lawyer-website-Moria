@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import OfficeMap from "../components/OfficeMap";
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [activeTab, setActiveTab] = useState("lawyer");
   const apiBase = import.meta.env.VITE_API_URL || "http://localhost:3000";
   const lat = 32.0831515;
@@ -152,6 +152,7 @@ const Home = () => {
           email: contactEmail,
           message: contactMessage,
           consent: contactConsent,
+          language: i18n.language.split("-")[0],
         }),
       });
       const data = await response.json();

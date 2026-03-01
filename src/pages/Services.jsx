@@ -23,6 +23,7 @@ const Services = () => {
           <div className="padding-vertical-large space-y-6">
             <p className="eyebrow">{t("services.eyebrow")}</p>
             <h1 className="section-title">{t("services.title")}</h1>
+            <br />
             <div className="grid gap-4 md:grid-cols-2">
               <article className="content-card">
                 <h2 className="card-title">{t("services.legalTitle")}</h2>
