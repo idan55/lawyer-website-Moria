@@ -249,7 +249,7 @@ const Layout = () => {
                       {t("footer.rights")}
                     </div>
                   </div>
-                  <p className="footer-developer">{t("footer.developer")}</p>
+                  <a href="https://www.instagram.com/idan.hadad/" className="footer-developer">{t("footer.developer")}</a>
                 </div>
               </div>
             </div>

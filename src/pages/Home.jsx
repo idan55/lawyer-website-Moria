@@ -25,6 +25,10 @@ const Home = () => {
       text: t("home.lawyerServices.realEstate.text"),
     },
     {
+      title: t("home.lawyerServices.immigration.title"),
+      text: t("home.lawyerServices.immigration.text"),
+    },
+    {
       title: t("home.lawyerServices.prenup.title"),
       text: t("home.lawyerServices.prenup.text"),
     },
@@ -35,10 +39,6 @@ const Home = () => {
     {
       title: t("home.lawyerServices.epo.title"),
       text: t("home.lawyerServices.epo.text"),
-    },
-    {
-      title: t("home.lawyerServices.immigration.title"),
-      text: t("home.lawyerServices.immigration.text"),
     },
     {
       title: t("home.lawyerServices.business.title"),
