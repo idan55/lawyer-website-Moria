@@ -8,7 +8,14 @@ import authRoutes from "./routes/auth.js";
 import availabilityRoutes from "./routes/availabilty.js";
 import bookRoutes from "./routes/book.js";
 import contactRoutes from "./routes/contact.js";
+
 const app = express();
+const isProduction = process.env.NODE_ENV === "production";
+
+if (isProduction) {
+  app.set("trust proxy", 1);
+}
+
 app.use(helmet());
 app.use(
   session({
@@ -16,8 +23,8 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: false, // localhost
-      sameSite: "lax", // IMPORTANT for OAuth redirect
+      secure: isProduction,
+      sameSite: isProduction ? "none" : "lax",
     },
   })
 );
@@ -45,7 +52,7 @@ app.get("/db-test", async (req, res) => {
     res.json(result.rows[0]);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Databse connection failed" });
+    res.status(500).json({ error: "Database connection failed" });
   }
 });
 
