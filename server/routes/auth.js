@@ -62,7 +62,6 @@ router.get("/google/callback", async (req, res) => {
     const accessToken = tokens.access_token || null;
     const refreshToken = tokens.refresh_token || null;
     const scope = tokens.scope || null;
-    const tokenType = tokens.token_type || null;
     const expiryDate = tokens.expiry_date || null;
 
     // IMPORTANT: don't overwrite refresh_token with null

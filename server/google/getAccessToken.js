@@ -1,5 +1,4 @@
 import pool from "../db/pool.js";
-import { google } from "googleapis";
 import { getOAuthClient } from "./googleClient.js";
 
 export async function getValidAccessToken() {
