@@ -14,8 +14,8 @@ function canStartOAuth(req) {
     return false;
   }
 
-  const requiredToken = process.env.OAUTH_CONNECT_TOKEN;
-  if (!requiredToken) return false;
+  const requiredToken = String(process.env.OAUTH_CONNECT_TOKEN || "").trim();
+  if (!requiredToken) return true;
 
   const providedToken =
     String(req.query.connect_token || "").trim() ||
