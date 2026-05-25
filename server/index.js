@@ -4,9 +4,9 @@ import helmet from "helmet";
 import "dotenv/config";
 import pool from "./db/pool.js";
 import session from "express-session";
-import authRoutes from "./routes/auth.js";
-import availabilityRoutes from "./routes/availabilty.js";
-import bookRoutes from "./routes/book.js";
+// import authRoutes from "./routes/auth.js";
+// import availabilityRoutes from "./routes/availabilty.js";
+// import bookRoutes from "./routes/book.js";
 import contactRoutes from "./routes/contact.js";
 
 const app = express();
@@ -36,8 +36,9 @@ app.use(
   })
 );
 app.use(express.json());
-app.use("/availability", availabilityRoutes);
-app.use("/book", bookRoutes);
+// Google Calendar booking flow is temporarily disabled.
+// app.use("/availability", availabilityRoutes);
+// app.use("/book", bookRoutes);
 app.use("/contact", contactRoutes);
 
 const PORT = process.env.PORT || 3000;
@@ -56,6 +57,6 @@ app.get("/db-test", async (req, res) => {
   }
 });
 
-app.use("/auth", authRoutes);
+// app.use("/auth", authRoutes);
 
 app.listen(PORT, () => console.log("Server is running on port: " + PORT));

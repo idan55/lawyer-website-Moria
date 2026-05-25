@@ -187,7 +187,7 @@ const Home = () => {
                     </p>
                   </div>
                   <div className="space-large" />
-                  <a href="/book" className="button-main">
+                  <a href="/#contacts" className="button-main">
                     <span>{t("home.heroCta")}</span>
                   </a>
                 </div>
@@ -472,7 +472,7 @@ const Home = () => {
       </section>
 
       <div className="contact-button">
-        <a href="/book" className="floating-button-home">
+        <a href="/#contacts" className="floating-button-home">
           {t("home.heroCta")}
         </a>
       </div>
