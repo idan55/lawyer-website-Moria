@@ -315,6 +315,7 @@ const Home = () => {
           <div className="container-large">
             <div className="padding-vertical-large">
               <div className="contact-grid">
+                {/* Contact form temporarily disabled due to inbox spam.
                 <div className="contact-form-wrapper">
                   <h2 id="contacts" className="header-medium">
                     {t("home.contactSectionTitle")}
@@ -387,9 +388,12 @@ const Home = () => {
                     </div>
                   </form>
                 </div>
+                */}
 
                 <div className="contact-list">
-                  <h2 className="header-small">{t("home.contactSectionTitle")}</h2>
+                  <h2 id="contacts" className="header-small">
+                    {t("home.contactSectionTitle")}
+                  </h2>
                   <div className="space-small" />
                   <div>
                     <a

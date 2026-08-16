@@ -7,7 +7,7 @@ import session from "express-session";
 // import authRoutes from "./routes/auth.js";
 // import availabilityRoutes from "./routes/availabilty.js";
 // import bookRoutes from "./routes/book.js";
-import contactRoutes from "./routes/contact.js";
+// import contactRoutes from "./routes/contact.js";
 
 const app = express();
 const isProduction = process.env.NODE_ENV === "production";
@@ -39,7 +39,8 @@ app.use(express.json());
 // Google Calendar booking flow is temporarily disabled.
 // app.use("/availability", availabilityRoutes);
 // app.use("/book", bookRoutes);
-app.use("/contact", contactRoutes);
+// Contact form is temporarily disabled due to inbox spam.
+// app.use("/contact", contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 
